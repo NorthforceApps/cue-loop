@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADHDリマインダーアプリ — 時間感覚を助けるやさしい合図 — CueLoop</title>
+<meta name="description" content="時間を忘れやすいですか？CueLoopは、スマホとWear OSウォッチで音、バイブ、画面フラッシュの安定した繰り返し合図を出し、1日のリズムを支えて時間感覚を助けます。低負担で落ち着いたADHD向けリマインダーアプリです。">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ja/guides/adhd-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="ADHD リマインダー アプリ, 時間感覚 アプリ, ADHD 繰り返し リマインダー, ADHD 気づき アプリ, 集中 リマインダー, body doubling 代替">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/adhd-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="ADHDリマインダーアプリ — 時間感覚を助けるやさしい合図">
+<meta property="og:description" content="時間を忘れやすいですか？CueLoopは、スマホとWear OSウォッチで音、バイブ、画面フラッシュの安定した繰り返し合図を出し、1日のリズムを支えて時間感覚を助けます。低負担で落ち着いたADHD向けリマインダーアプリです。">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ja/guides/adhd-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ADHDリマインダーアプリ — 時間感覚を助けるやさしい合図">
+<meta name="twitter:description" content="時間を忘れやすいですか？CueLoopは、スマホとWear OSウォッチで音、バイブ、画面フラッシュの安定した繰り返し合図を出し、1日のリズムを支えて時間感覚を助けます。低負担で落ち着いたADHD向けリマインダーアプリです。">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ja",
+  "headline": "ADHDリマインダーアプリ — 時間感覚を助けるやさしい合図",
+  "description": "時間を忘れやすいですか？CueLoopは、スマホとWear OSウォッチで音、バイブ、画面フラッシュの安定した繰り返し合図を出し、1日のリズムを支えて時間感覚を助けます。低負担で落ち着いたADHD向けリマインダーアプリです。",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/ja/guides/adhd-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CueLoopは時間感覚の困りごとにどう役立ちますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "安定した繰り返し合図が時間の流れを区切るので、何時間も消えたように感じにくくなります。20〜30分ごとの合図は、タスク切り替え、休憩、水分補給、運動の目印になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "設定は簡単ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。ホイール選択、即時テスト、今すぐ開始で、長いオンボーディングや計画なしに数秒で合図を動かせます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ウォッチでも合図を受け取れますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。Wear OSウォッチに手首のバイブとして合図をミラーできます。気づきやすく、無視しにくい合図です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "連続記録や罪悪感で急かされますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。連続記録、点数、SNSフィードはありません。必要な時に、やさしく確実に知らせるだけです。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ja/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ja/#features">機能</a>
+      <a class="nav-sec" href="/cue-loop/ja/#how">使い方</a>
+      <a href="/cue-loop/ja/guides/">ガイド</a>
+      <details class="lang"><summary><span class="flag">🇯🇵</span> <span class="lang-label">日本語</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/adhd-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/adhd-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/adhd-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/adhd-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/adhd-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/adhd-reminder-app.html" hreflang="ja" lang="ja" aria-current="true">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/adhd-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ja/guides/">← すべてのガイド</a></p>
+  <h1>ADHDリマインダーアプリ — 時間感覚を助けるやさしい合図</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ja/scene-04-breathing.jpg" alt="1日のリズムを支える落ち着いた繰り返し合図" loading="lazy">
+<p class="lede">時間がすっと消えてしまう時は、長い計画表より安定した合図が役立つことがあります。シンプルな<strong>ADHDリマインダーアプリ</strong>は、無視しにくい繰り返しの合図で1日を支えます。<a href="/cue-loop/ja/">CueLoop</a>は、スマホとWear OSウォッチに音、バイブ、画面フラッシュのやさしい繰り返しリマインダーを出し、時間感覚を助けて動き出しやすくします。</p>
+
+<h2>繰り返しの合図が時間感覚を助ける理由</h2>
+<p>時間感覚が薄いと、「数分だけ」のつもりがかなり後になっていることがあります。繰り返しの合図は、時間の流れを区切ってくれます。20〜30分ごとの合図は、低い負担のチェックポイントです。水を飲む、タスクを切り替える、立つ、または時間の経過に気づくために使えます。時計を見続ける必要はありません。</p>
+
+<h2>低負担な設計</h2>
+<p>設定はあえて短くしています。ホイール選択、即時テスト、今すぐ開始で、数秒で使える合図を作れます。長いオンボーディング、複雑なルーティン、アカウント作成はありません。始めるのが面倒な道具は使われにくいので、CueLoopは入口を短くしています。</p>
+
+<h2>アンカーになる合図を作る</h2>
+<ol>
+  <li>必要な内容でcue loopを追加します。「時間確認」「タスク切替」「水」など。</li>
+  <li>20〜30分の間隔と、自分の1日に合う有効時間を設定します。</li>
+  <li>モードを選びます。手首のバイブは身体で感じるので、ADHDでは気づきやすい合図になります。</li>
+  <li>いくつかを並行して使えます。運動、水分補給、集中確認を、それぞれ別のリズムで。</li>
+</ol>
+
+<h2>連続記録も罪悪感もなし</h2>
+<p>多くの習慣アプリやADHD向けアプリは、連続記録、点数、SNSフィードを使います。1日抜けると失敗のように感じて逆効果になることもあります。CueLoopにはそれがありません。指定した時間に、やさしく確実に知らせるだけです。合図を逃しても何も壊れません。次の合図はまた届きます。</p>
+
+<h2>手首にも持っていく</h2>
+<p>合図はWear OSウォッチにバイブとしてミラーできます。スマホが離れていても感じやすく、無視しにくい合図です。<a href="/cue-loop/ja/guides/wear-os-reminder-app.html">Wear OSリマインダーガイド</a>を見るか、<a href="/cue-loop/ja/guides/gentle-pomodoro-alternative.html">やさしいPomodoro代替</a>で集中リズムを試してください。</p>
+
+<p>CueLoopはオフライン優先で、無料でインストールできます。<a href="/cue-loop/ja/">仕組みはこちら</a>。</p>
+
+  <section class="faq">
+    <h2>よくある質問</h2>
+    <details><summary>CueLoopは時間感覚の困りごとにどう役立ちますか？</summary><p>安定した繰り返し合図が時間の流れを区切るので、何時間も消えたように感じにくくなります。20〜30分ごとの合図は、タスク切り替え、休憩、水分補給、運動の目印になります。</p></details>
+    <details><summary>設定は簡単ですか？</summary><p>はい。ホイール選択、即時テスト、今すぐ開始で、長いオンボーディングや計画なしに数秒で合図を動かせます。</p></details>
+    <details><summary>ウォッチでも合図を受け取れますか？</summary><p>はい。Wear OSウォッチに手首のバイブとして合図をミラーできます。気づきやすく、無視しにくい合図です。</p></details>
+    <details><summary>連続記録や罪悪感で急かされますか？</summary><p>いいえ。連続記録、点数、SNSフィードはありません。必要な時に、やさしく確実に知らせるだけです。</p></details>
+  </section>
+  <section class="related">
+    <h2>関連ガイド</h2>
+    <ul>
+      <li><a href="/cue-loop/ja/guides/wear-os-reminder-app.html">Wear OSリマインダーアプリ</a></li>
+      <li><a href="/cue-loop/ja/guides/desk-break-reminder-app.html">デスク休憩リマインダー</a></li>
+      <li><a href="/cue-loop/ja/guides/gentle-pomodoro-alternative.html">やさしいPomodoro代替</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>試してみますか？</h2>
+    <p>CueLoopは無料でインストールできます。数秒で合図を開始できます。</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ja.svg" alt="Google Playで入手" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ja/privacy.html">プライバシー</a>
+      <a href="mailto:northforceapps@protonmail.com">お問い合わせ</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

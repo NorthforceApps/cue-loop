@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CueLoop — Android 및 Wear OS용 부드러운 반복 알림</title>
+<meta name="description" content="CueLoop는 휴대폰과 Wear OS 워치를 조용한 알림 도구로 바꿔 줍니다. 원하는 간격을 정하고, 수분 보충, 자세, 눈 휴식, 호흡, 스트레칭, 집중 스프린트, ADHD 친화적 알림을 부드러운 소리, 가벼운 진동 또는 짧은 화면 깜박임으로 받아 보세요. 오프라인, 계정 없음, 추적 없음.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ko/">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="반복 알림 앱, 간격 알림, Wear OS 알림 앱, 스마트워치 알림, 물 마시기 알림, 자세 교정 알림, 20-20-20 눈 휴식 앱, 부드러운 Pomodoro 대안, ADHD 알림 앱, 휴식 알림, 습관 알림, 화면 깜박임 알림, 진동 알림, Android 정확한 알람">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ko">
+<meta property="og:title" content="CueLoop — Android 및 Wear OS용 부드러운 반복 알림">
+<meta property="og:description" content="원하는 간격으로 휴대폰과 Wear OS 워치에 부드러운 소리, 진동 또는 화면 깜박임 알림을 받으세요. 수분 보충, 자세, 눈 휴식, 호흡, 집중, ADHD 알림에. 오프라인, 계정 없음.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ko/">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CueLoop — Android 및 Wear OS용 부드러운 반복 알림">
+<meta name="twitter:description" content="원하는 간격으로 휴대폰과 Wear OS 워치에 부드러운 소리, 진동 또는 화면 깜박임 알림을 받으세요. 수분 보충, 자세, 눈 휴식, 호흡, 집중, ADHD 알림에. 오프라인, 계정 없음.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "CueLoop",
+  "operatingSystem": "Android 8.0+",
+  "applicationCategory": "LifestyleApplication",
+  "inLanguage": "ko",
+  "description": "CueLoop는 정확한 일정에 맞춰 작은 습관 알림을 제공합니다. 부드러운 소리, 가벼운 진동 또는 짧은 화면 깜박임으로 알려 주는 반복 cue loop를 만들고, Wear OS 워치에도 미러링할 수 있습니다. 오프라인 우선, 계정 없음, 추적 없음.",
+  "url": "https://northforceapps.github.io/cue-loop/ko/",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.cueloop.app",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "원하는 간격으로 반복되는 cue loop(초, 분, 시간)",
+    "부드러운 소리, 가벼운 진동 또는 짧은 화면 깜박임",
+    "손목으로 미러링되는 Wear OS 스마트워치 알림",
+    "활성 시간 설정으로 쉬는 시간에는 조용하게",
+    "정확한 알람 + 포그라운드 서비스로 제시간 알림",
+    "Weekly Free Day로 주 1일 모든 Pro 기능 사용",
+    "맞춤 소리와 오디오 파일(Pro)",
+    "오프라인 우선, 계정 없음, 추적 없음"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ko",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CueLoop는 습관 추적 앱인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "정확히는 아닙니다. CueLoop는 연속 기록 추적기보다 반복 알림과 신호 앱에 가깝습니다. 차트, 소셜 피드, 복잡한 루틴 계획 대신 제시간에 오는 부드러운 신호에 집중합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "물을 마시거나 자세를 고치거나 눈 휴식을 하라고 알려 줄 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 습관마다 cue loop를 만들고 간격과 활성 시간을 설정하면 부드러운 소리, 가벼운 진동 또는 화면 깜박임으로 알려 줍니다. 수분 보충, 자세, 20-20-20 눈 휴식은 가장 많이 쓰이는 용도입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CueLoop는 Wear OS 워치와 작동하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. Wear OS 워치(Pixel Watch, Galaxy Watch 등)가 있으면 알림을 손목으로 미러링할 수 있습니다. 휴대폰이 무음이거나 주머니 속, 방 건너편에 있을 때 좋습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "알림이 제시간에 오나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CueLoop는 Android 정확한 알람과 포그라운드 서비스를 사용해 알림이 밀리지 않고 일정에 가깝게 오도록 합니다. 일부 기기에서는 알림, 정확한 알람 권한(Android 12+), 배터리 최적화 제외를 켜야 할 수 있으며, CueLoop가 해당 설정으로 바로 안내합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CueLoop에 계정이 필요한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. CueLoop는 오프라인 우선입니다. 알림 기능에는 계정 생성이나 클라우드 동기화가 필요 없고, 핵심 경험에는 추적이나 분석이 없습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CueLoop는 구독 방식인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. CueLoop에는 핵심 기능이 포함된 무료 단계와 전체 사운드 세트, 맞춤 오디오 파일, 추가 예약 기능을 더하는 일회성 CueLoop Pro 잠금 해제가 있습니다. Weekly Free Day에는 매주 하루 모든 Pro 기능도 열립니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "더 부드러운 Pomodoro나 간격 타이머로 쓸 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 집중/휴식 간격을 설정하면 앱을 잠그거나 큰 알람을 울리는 대신 부드러운 신호로 알려 줍니다. 엄격한 생산성 타이머보다 차분한 대안입니다."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ko/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ko/#features">기능</a>
+      <a class="nav-sec" href="/cue-loop/ko/#how">작동 방식</a>
+      <a href="/cue-loop/ko/guides/">가이드</a>
+      <details class="lang"><summary><span class="flag">🇰🇷</span> <span class="lang-label">한국어</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/" hreflang="ko" lang="ko" aria-current="true">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Android용 부드러운 반복 알림</span>
+      <h1>작은 신호로 리듬을 지키세요.</h1>
+      <p class="lead">원하는 간격을 설정하면 CueLoop가 휴대폰과 Wear OS 워치에서 부드러운 소리, 가벼운 진동 또는 짧은 화면 깜박임으로 알려 줍니다. 수분 보충, 자세, 눈 휴식, 호흡, 집중에.</p>
+    </div>
+    <div class="hero-actions">
+      <div class="cta">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ko.svg" alt="Google Play에서 받기" width="186" height="55" loading="lazy"></a>
+        <a class="btn ghost" href="#how">작동 방식 보기</a>
+      </div>
+      <p class="note">가입 없음 · 오프라인 및 비공개 · Wear OS · Weekly Free Day</p>
+    </div>
+    <div class="hero-phone"><img src="/cue-loop/assets/ss-home.png" alt="Android 휴대폰에서 실행 중인 cue loop를 보여 주는 CueLoop 홈 화면" width="300" height="667"></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">세 가지 알림 방식</span>
+      <h2>실제로 알아차리는 신호</h2>
+      <p>연속 기록, 죄책감, 피드 없이. 필요한 순간에 맞는 조용하고 정확한 신호만 제공합니다.</p>
+    </div>
+    <div class="modes">
+      <div class="mode">
+        <span class="tag">부드러운 소리</span>
+        <h3>알람이 아닌 잔잔한 톤</h3>
+        <p>차분한 내장 사운드나 직접 고른 오디오 파일(Pro)을 선택하세요. 알아차리기 충분하지만 공간을 방해하지 않습니다.</p>
+      </div>
+      <div class="mode">
+        <span class="tag">가벼운 진동</span>
+        <h3>다른 사람에게 조용한 촉각 신호</h3>
+        <p>사무실, 도서관, 회의에 좋은 은은한 진동입니다. 소리 없이 신호를 느낄 수 있습니다.</p>
+      </div>
+      <div class="mode">
+        <span class="tag">화면 깜박임</span>
+        <h3>소음 없는 시각 신호</h3>
+        <p>소리와 진동을 모두 쓰기 어려울 때 잠금 화면이 짧게 깜박입니다. 조용한 책상에 잘 맞습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">방해하지 않도록 설계</span>
+      <h2>차분하고, 믿을 수 있고, 내 방식대로</h2>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>언제나 제시간</h3><p>정확한 알람과 포그라운드 서비스가 알림이 밀리지 않고 일정에 가깝게 오도록 돕습니다.</p></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>나만의 간격</h3><p>몇 초, 몇 분, 몇 시간마다 알림을 설정하고, 활성 시간으로 퇴근 후에는 조용하게 둘 수 있습니다.</p></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-5v12L3 13z"/><path d="M11 6v12"/></svg></div><h3>손목에서도</h3><p>Pixel Watch, Galaxy Watch 등 Wear OS 워치로 알림을 미러링합니다. 휴대폰이 주머니에 있어도 편리합니다.</p></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h3>오프라인 및 비공개</h3><p>모든 것이 기기에 남습니다. 계정, 클라우드, 핵심 앱의 추적 또는 분석이 없습니다.</p></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><h3>내 취향대로</h3><p>각 cue loop의 이름, 방식, 소리를 정하고 앱 테마도 취향에 맞게 바꿀 수 있습니다.</p></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></div><h3>빠른 설정</h3><p>휠 선택, 즉시 테스트, 바로 시작으로 몇 초 만에 작동하는 알림을 만들 수 있습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="uses">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">하나의 앱, 여러 습관</span>
+      <h2>자꾸 잊는 모든 것에</h2>
+    </div>
+    <div class="uses">
+      <div class="use"><div class="emoji">💧</div><h3>수분 보충</h3><p>원하는 간격으로 물 마시기 신호.</p></div>
+      <div class="use"><div class="emoji">🧍</div><h3>자세</h3><p>등과 어깨를 부드럽게 리셋.</p></div>
+      <div class="use"><div class="emoji">👀</div><h3>눈 휴식</h3><p>화면에서 눈을 쉬게 하는 20-20-20 신호.</p></div>
+      <div class="use"><div class="emoji">🌬️</div><h3>호흡</h3><p>천천히 숨 쉬라는 차분한 알림.</p></div>
+      <div class="use"><div class="emoji">🤸</div><h3>스트레칭과 움직임</h3><p>일어나고, 늘리고, 굳은 몸을 푸는 마이크로 휴식.</p></div>
+      <div class="use"><div class="emoji">🎯</div><h3>집중 스프린트</h3><p>엄격한 타이머보다 부드러운 작업/휴식 리듬.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="scenes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">실생활에서 보기</span>
+      <h2>작은 신호, 실제 순간</h2>
+    </div>
+    <div class="scenes">
+      <img src="/cue-loop/assets/ko/scene-01-hydration.jpg" alt="책상에서 휴대폰의 부드러운 물 마시기 알림을 받는 사람" loading="lazy">
+      <img src="/cue-loop/assets/ko/scene-02-eye-break.jpg" alt="20-20-20 눈 휴식을 위해 화면에서 시선을 돌리는 모습" loading="lazy">
+      <img src="/cue-loop/assets/ko/scene-03-stretch.jpg" alt="짧은 스트레칭 마이크로 휴식을 위해 일어나는 모습" loading="lazy">
+      <img src="/cue-loop/assets/ko/scene-04-breathing.jpg" alt="바쁜 하루 중 차분한 호흡 알림" loading="lazy">
+      <img src="/cue-loop/assets/ko/scene-05-watch-walk.jpg" alt="산책 중 Wear OS 워치가 손목에서 진동하는 모습" loading="lazy">
+      <img src="/cue-loop/assets/ko/scene-06-focus-sprint.jpg" alt="집중 스프린트 알림으로 작업 리듬을 유지하는 모습" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">설정 · 예약 · 알림 받기</span>
+      <h2>CueLoop 작동 방식</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>cue loop 만들기</h3><p>이름을 붙이고 부드러운 소리, 가벼운 진동 또는 화면 깜박임을 선택합니다. 내장 사운드 또는 직접 고른 소리(Pro)를 쓸 수 있습니다.</p></div>
+      <div class="step"><div class="n">2</div><h3>리듬 설정</h3><p>초, 분, 시간 단위로 간격을 고르고, 활성 시간을 정해 쉬는 시간에는 조용하게 둡니다.</p></div>
+      <div class="step"><div class="n">3</div><h3>알림 받기</h3><p>화면이 꺼져 있어도 휴대폰과 Wear OS 워치에 제시간 신호가 도착합니다.</p></div>
+    </div>
+  </div>
+  <div class="wrap comic">
+    <img src="/cue-loop/assets/ko/comic.jpg" alt="설정, 예약, 알림 받기 — CueLoop가 작동하는 세 단계" loading="lazy">
+  </div>
+  <div class="gallery" aria-label="App screenshots">
+    <img src="/cue-loop/assets/ko/slide-01-hero.jpg" alt="cue loop가 실행 중인 CueLoop 홈 화면" loading="lazy">
+    <img src="/cue-loop/assets/ko/slide-02-schedule.jpg" alt="알림 간격과 활성 시간을 선택하는 화면" loading="lazy">
+    <img src="/cue-loop/assets/ko/slide-03-modes.jpg" alt="알림 방식 선택 — 소리, 진동 또는 화면 깜박임" loading="lazy">
+    <img src="/cue-loop/assets/ko/slide-04-wear.jpg" alt="Wear OS 워치로 미러링된 알림" loading="lazy">
+    <img src="/cue-loop/assets/ko/slide-06-personalize.jpg" alt="앱 테마와 개인화 옵션" loading="lazy">
+    <img src="/cue-loop/assets/ko/slide-08-usecases.jpg" alt="내장 라이브러리에서 알림 소리를 선택하는 화면" loading="lazy">
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">무료로 사용</span>
+      <h2>간단한 가격</h2>
+      <p>CueLoop는 매일 무료로 사용할 수 있습니다. 더 필요할 때 한 번만 Pro로 업그레이드하세요. 구독은 없습니다.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <h3>무료</h3>
+        <p>부드러운 알림 루틴을 만들기 위한 핵심 기능입니다.</p>
+        <ul>
+          <li>모든 핵심 알림 기능</li>
+          <li>내장 사운드 1개 + 진동 + 깜박임</li>
+          <li>Wear OS 미러링</li>
+          <li>Weekly Free Day로 모든 Pro 기능 사용</li>
+        </ul>
+      </div>
+      <div class="tier pro">
+        <h3>Pro</h3>
+        <p>한 번 구매로 잠금 해제. 구독은 없습니다.</p>
+        <ul>
+          <li>전체 사운드 세트 + 맞춤 오디오 파일</li>
+          <li>추가 예약 편의 기능</li>
+          <li>향후 모든 Pro 기능</li>
+          <li>일회성 구매</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap faq">
+    <div class="section-head">
+      <span class="eyebrow">알아두면 좋은 점</span>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <details><summary>CueLoop는 습관 추적 앱인가요?</summary><p>정확히는 아닙니다. CueLoop는 연속 기록 추적기보다 반복 알림과 신호 앱에 가깝습니다. 차트, 소셜 피드, 복잡한 루틴 계획 대신 제시간에 오는 부드러운 신호에 집중합니다.</p></details>
+    <details><summary>물을 마시거나 자세를 고치거나 눈 휴식을 하라고 알려 줄 수 있나요?</summary><p>네. 습관마다 cue loop를 만들고 간격과 활성 시간을 설정하면 부드러운 소리, 가벼운 진동 또는 화면 깜박임으로 알려 줍니다. 수분 보충, 자세, 20-20-20 눈 휴식은 가장 많이 쓰이는 용도입니다.</p></details>
+    <details><summary>CueLoop는 Wear OS 워치와 작동하나요?</summary><p>네. Wear OS 워치(Pixel Watch, Galaxy Watch 등)가 있으면 알림을 손목으로 미러링할 수 있습니다. 휴대폰이 무음이거나 주머니 속, 방 건너편에 있을 때 좋습니다.</p></details>
+    <details><summary>알림이 제시간에 오나요?</summary><p>CueLoop는 Android 정확한 알람과 포그라운드 서비스를 사용해 알림이 밀리지 않고 일정에 가깝게 오도록 합니다. 일부 기기에서는 알림, 정확한 알람 권한(Android 12+), 배터리 최적화 제외를 켜야 할 수 있으며, CueLoop가 해당 설정으로 바로 안내합니다.</p></details>
+    <details><summary>CueLoop에 계정이 필요한가요?</summary><p>아니요. CueLoop는 오프라인 우선입니다. 알림 기능에는 계정 생성이나 클라우드 동기화가 필요 없고, 핵심 경험에는 추적이나 분석이 없습니다.</p></details>
+    <details><summary>CueLoop는 구독 방식인가요?</summary><p>아니요. CueLoop에는 핵심 기능이 포함된 무료 단계와 전체 사운드 세트, 맞춤 오디오 파일, 추가 예약 기능을 더하는 일회성 CueLoop Pro 잠금 해제가 있습니다. Weekly Free Day에는 매주 하루 모든 Pro 기능도 열립니다.</p></details>
+    <details><summary>더 부드러운 Pomodoro나 간격 타이머로 쓸 수 있나요?</summary><p>네. 집중/휴식 간격을 설정하면 앱을 잠그거나 큰 알람을 울리는 대신 부드러운 신호로 알려 줍니다. 엄격한 생산성 타이머보다 차분한 대안입니다.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="band">
+    <h2>리듬을 부드럽게 만드세요</h2>
+    <p>무료 설치. 몇 초 만에 알림 시작.</p>
+    <a class="play-badge on-dark" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ko.svg" alt="Google Play에서 받기" width="186" height="55" loading="lazy"></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ko/privacy.html">개인정보 보호</a>
+      <a href="mailto:northforceapps@protonmail.com">문의</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

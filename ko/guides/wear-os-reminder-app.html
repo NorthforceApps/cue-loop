@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wear OS 알림 앱 — 손목의 반복 신호 — CueLoop</title>
+<meta name="description" content="Wear OS 워치에서 부드러운 반복 알림을 바로 받아 보세요. CueLoop는 Pixel Watch, Galaxy Watch 등으로 알림을 미러링하여 휴대폰이 멀리 있어도 손목 진동으로 리듬을 지켜 줍니다. Wear OS용 간단한 반복 알림 앱입니다.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="Wear OS 알림 앱, 스마트워치 반복 알림, Pixel Watch 알림 앱, Galaxy Watch 알림, 손목 알림 앱, 스마트워치 간격 알림">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ko">
+<meta property="og:title" content="Wear OS 알림 앱 — 손목의 반복 신호">
+<meta property="og:description" content="Wear OS 워치에서 부드러운 반복 알림을 바로 받아 보세요. CueLoop는 Pixel Watch, Galaxy Watch 등으로 알림을 미러링하여 휴대폰이 멀리 있어도 손목 진동으로 리듬을 지켜 줍니다. Wear OS용 간단한 반복 알림 앱입니다.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wear OS 알림 앱 — 손목의 반복 신호">
+<meta name="twitter:description" content="Wear OS 워치에서 부드러운 반복 알림을 바로 받아 보세요. CueLoop는 Pixel Watch, Galaxy Watch 등으로 알림을 미러링하여 휴대폰이 멀리 있어도 손목 진동으로 리듬을 지켜 줍니다. Wear OS용 간단한 반복 알림 앱입니다.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ko",
+  "headline": "Wear OS 알림 앱 — 손목의 반복 신호",
+  "description": "Wear OS 워치에서 부드러운 반복 알림을 바로 받아 보세요. CueLoop는 Pixel Watch, Galaxy Watch 등으로 알림을 미러링하여 휴대폰이 멀리 있어도 손목 진동으로 리듬을 지켜 줍니다. Wear OS용 간단한 반복 알림 앱입니다.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ko",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "휴대폰이 근처에 있어야 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "알림은 휴대폰에서 예약되고 워치에 알림으로 미러링됩니다. 일반적인 Wear OS 설정처럼 워치가 휴대폰 범위 안에 있을 때 표시됩니다. 손목 진동 덕분에 휴대폰이 주머니 속이나 방 건너편에 있어도 알아차리기 쉽습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "어떤 워치가 작동하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "휴대폰 알림을 미러링하는 Wear OS 워치라면 사용할 수 있습니다. Pixel Watch, Samsung Galaxy Watch, 기타 Wear OS 모델이 포함됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "워치가 조용히 진동할 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 진동을 선택하면 소리 없이 은은한 손목 탭으로 알려 줍니다. 회의, 사무실, 도서관에 좋습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "얼마나 자주 알려 줄 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "원하는 만큼 자주 설정할 수 있습니다. 초, 분, 시간 단위로 간격을 정하고, 활성 시간으로 쉬는 시간에는 조용하게 둘 수 있습니다."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ko/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ko/#features">기능</a>
+      <a class="nav-sec" href="/cue-loop/ko/#how">작동 방식</a>
+      <a href="/cue-loop/ko/guides/">가이드</a>
+      <details class="lang"><summary><span class="flag">🇰🇷</span> <span class="lang-label">한국어</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/wear-os-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/wear-os-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/wear-os-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/wear-os-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/wear-os-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/wear-os-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/wear-os-reminder-app.html" hreflang="ko" lang="ko" aria-current="true">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ko/guides/">← 모든 가이드</a></p>
+  <h1>Wear OS 알림 앱 — 손목의 반복 신호</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ko/scene-05-watch-walk.jpg" alt="산책 중 Wear OS 워치가 부드러운 신호로 진동하는 모습" loading="lazy">
+<p class="lede">좋은 <strong>Wear OS 알림 앱</strong>은 손목에 부드러운 신호를 보내 휴대폰을 꺼내지 않아도 바로 행동하게 합니다. <a href="/cue-loop/ko/">CueLoop</a>는 Android 휴대폰에서 반복 신호를 예약하고 워치에 알림으로 미러링합니다. Pixel Watch, Galaxy Watch 또는 다른 Wear OS 기기에서 원하는 간격에 맞춰 부드러운 손목 진동을 받을 수 있습니다.</p>
+
+<h2>손목 알림이 더 잘 작동하는 이유</h2>
+<p>휴대폰 알림은 놓치기 쉽습니다. 휴대폰이 가방 안에 있거나, 뒤집혀 있거나, 무음일 수 있습니다. 손목 알림은 바로 느낄 수 있는 곳에 있습니다. 물, 자세, 눈 휴식, 움직임, 집중 체크인 같은 반복 습관에는 20분 또는 30분마다 오는 조용한 진동이 휴대폰으로 끌려가지 않고 리듬을 지키게 해 줍니다.</p>
+
+<h2>CueLoop가 워치에 신호를 보내는 방법</h2>
+<ol>
+  <li><strong>휴대폰에서 cue loop를 만듭니다.</strong> 이름을 붙이고 방식(부드러운 소리, 가벼운 진동, 짧은 화면 깜박임)을 고른 뒤 간격을 선택합니다.</li>
+  <li><strong>간격과 활성 시간을 설정합니다.</strong> 예를 들어 평일 9:00부터 17:00까지처럼 원하는 시간에만 신호가 울리게 합니다.</li>
+  <li><strong>평소처럼 워치를 착용합니다.</strong> 신호가 울리면 알림이 Android의 표준 알림 릴레이를 통해 Wear OS 워치로 미러링되어 그 순간 손목 진동을 받습니다.</li>
+</ol>
+
+<h2>어떤 워치가 작동하나요?</h2>
+<p>휴대폰 알림을 미러링하는 Wear OS 워치라면 CueLoop 신호를 보여 줍니다. Google Pixel Watch와 Samsung Galaxy Watch 모델도 포함됩니다. 일반적인 Wear OS 페어링처럼 워치가 휴대폰에 연결되어 있을 때 신호가 표시되며, 손목 진동 덕분에 휴대폰이 주머니에 있어도 놓치기 어렵습니다.</p>
+
+<h2>필요할 때 조용하게</h2>
+<p>진동을 선택하면 소리 없는 은은한 손목 탭으로 신호를 받을 수 있습니다. 회의, 사무실, 도서관에 좋습니다. 집에서는 부드러운 소리를 쓰고, 진동도 부담스러운 순간에는 화면 깜박임을 고를 수 있습니다. 각 cue loop마다 방식이 따로 있어 조용한 자세 신호와 부드러운 물 마시기 소리를 함께 실행할 수 있습니다.</p>
+
+<h2>무거운 알림 앱의 차분한 대안</h2>
+<p>많은 알림 및 습관 앱은 연속 기록, 점수, 계정에 의존합니다. CueLoop는 의도적으로 작게 유지됩니다. 가입, 클라우드, 핵심 앱의 추적 없이 휴대폰과 손목에서 믿을 수 있는 반복 신호만 제공합니다. Android 정확한 알람과 포그라운드 서비스를 사용해 신호가 밀리지 않고 일정에 가깝게 유지됩니다.</p>
+
+<p><a href="/cue-loop/ko/">CueLoop 작동 방식</a>을 보거나 <a href="/cue-loop/ko/guides/desk-break-reminder-app.html">책상 휴식 알림 가이드</a>로 데스크 습관을 설정해 보세요.</p>
+
+  <section class="faq">
+    <h2>자주 묻는 질문</h2>
+    <details><summary>휴대폰이 근처에 있어야 하나요?</summary><p>알림은 휴대폰에서 예약되고 워치에 알림으로 미러링됩니다. 일반적인 Wear OS 설정처럼 워치가 휴대폰 범위 안에 있을 때 표시됩니다. 손목 진동 덕분에 휴대폰이 주머니 속이나 방 건너편에 있어도 알아차리기 쉽습니다.</p></details>
+    <details><summary>어떤 워치가 작동하나요?</summary><p>휴대폰 알림을 미러링하는 Wear OS 워치라면 사용할 수 있습니다. Pixel Watch, Samsung Galaxy Watch, 기타 Wear OS 모델이 포함됩니다.</p></details>
+    <details><summary>워치가 조용히 진동할 수 있나요?</summary><p>네. 진동을 선택하면 소리 없이 은은한 손목 탭으로 알려 줍니다. 회의, 사무실, 도서관에 좋습니다.</p></details>
+    <details><summary>얼마나 자주 알려 줄 수 있나요?</summary><p>원하는 만큼 자주 설정할 수 있습니다. 초, 분, 시간 단위로 간격을 정하고, 활성 시간으로 쉬는 시간에는 조용하게 둘 수 있습니다.</p></details>
+  </section>
+  <section class="related">
+    <h2>관련 가이드</h2>
+    <ul>
+      <li><a href="/cue-loop/ko/guides/desk-break-reminder-app.html">책상 휴식 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/gentle-pomodoro-alternative.html">부드러운 Pomodoro 대안</a></li>
+      <li><a href="/cue-loop/ko/guides/adhd-reminder-app.html">ADHD 알림 앱</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>한번 써볼까요?</h2>
+    <p>CueLoop는 무료로 설치할 수 있습니다. 몇 초 만에 알림을 시작하세요.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ko.svg" alt="Google Play에서 받기" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ko/privacy.html">개인정보 보호</a>
+      <a href="mailto:northforceapps@protonmail.com">문의</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

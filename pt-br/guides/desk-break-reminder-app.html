@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App de lembrete de pausa — água, postura e 20-20-20 — CueLoop</title>
+<meta name="description" content="Um lembrete simples de pausa para escritório e home office: o CueLoop chama sua atenção para beber água, corrigir a postura e descansar os olhos com a regra 20-20-20. Uma alternativa calma, sem conta, a trackers gamificados como WaterMinder ou Plant Nanny.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/pt-br/guides/desk-break-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="app lembrete de pausa, lembrete para beber água, lembrete de postura, app pausa visual 20-20-20, lembrete para tomar água, lembrete para alongar, alternativa ao WaterMinder, alternativa ao Plant Nanny">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/desk-break-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="pt-BR">
+<meta property="og:title" content="App de lembrete de pausa — água, postura e 20-20-20">
+<meta property="og:description" content="Um lembrete simples de pausa para escritório e home office: o CueLoop chama sua atenção para beber água, corrigir a postura e descansar os olhos com a regra 20-20-20. Uma alternativa calma, sem conta, a trackers gamificados como WaterMinder ou Plant Nanny.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/pt-br/guides/desk-break-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="App de lembrete de pausa — água, postura e 20-20-20">
+<meta name="twitter:description" content="Um lembrete simples de pausa para escritório e home office: o CueLoop chama sua atenção para beber água, corrigir a postura e descansar os olhos com a regra 20-20-20. Uma alternativa calma, sem conta, a trackers gamificados como WaterMinder ou Plant Nanny.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "pt-BR",
+  "headline": "App de lembrete de pausa — água, postura e 20-20-20",
+  "description": "Um lembrete simples de pausa para escritório e home office: o CueLoop chama sua atenção para beber água, corrigir a postura e descansar os olhos com a regra 20-20-20. Uma alternativa calma, sem conta, a trackers gamificados como WaterMinder ou Plant Nanny.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/pt-br/guides/desk-break-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-BR",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Um app cobre água, postura e pausas para os olhos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Crie um ciclo separado para cada um: um toque para beber água, um reset de postura e uma pausa visual 20-20-20, cada um com seu próprio ritmo e modo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é a regra 20-20-20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cada 20 minutos, olhe para algo a cerca de 20 pés (6 m) de distância por 20 segundos para descansar os olhos. Defina um ciclo de 20 minutos e o CueLoop lembra você."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença para um app de controle de água?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trackers gamificados como WaterMinder ou Plant Nanny pedem registro do consumo e criam sequências. O CueLoop só dá um toque calmo e no momento certo: sem registro, sem conta, sem culpa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os lembretes podem ficar silenciosos no trabalho?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Use vibração ou um breve flash na tela em vez de som, para o lembrete de mesa não incomodar o ambiente."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/pt-br/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/pt-br/#features">Recursos</a>
+      <a class="nav-sec" href="/cue-loop/pt-br/#how">Como funciona</a>
+      <a href="/cue-loop/pt-br/guides/">Guias</a>
+      <details class="lang"><summary><span class="flag">🇧🇷</span> <span class="lang-label">Português</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/desk-break-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/desk-break-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/desk-break-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/desk-break-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/desk-break-reminder-app.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">🇧🇷 Português</a><a href="/cue-loop/ja/guides/desk-break-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/desk-break-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/pt-br/guides/">← Todos os guias</a></p>
+  <h1>App de lembrete de pausa — água, postura e 20-20-20</h1>
+  <img class="guide-hero" src="/cue-loop/assets/pt-BR/scene-01-hydration.jpg" alt="Um lembrete suave de hidratação chegando na mesa" loading="lazy">
+<p class="lede">Se você passa o dia diante de uma tela, um simples <strong>app de lembrete de pausa</strong> pode ajudar muito: um toque para beber água, um aviso para corrigir a postura e uma pausa para descansar os olhos com a regra 20-20-20. <a href="/cue-loop/pt-br/">CueLoop</a> roda os três como lembretes recorrentes suaves no seu próprio ritmo: som leve, vibração ou flash discreto na tela, sem conta e sem registro.</p>
+
+<h2>Um app, três hábitos de mesa</h2>
+<p>Crie um ciclo de lembrete separado para cada hábito e ajuste cada um no seu ritmo:</p>
+<ul>
+  <li><strong>Lembrete de hidratação</strong> — um toque para beber água a cada 30 a 60 minutos.</li>
+  <li><strong>Lembrete de postura</strong> — um aviso de "sente melhor, relaxe os ombros" a cada 20 a 30 minutos.</li>
+  <li><strong>Pausas para os olhos (20-20-20)</strong> — a cada 20 minutos, olhe para algo a cerca de 20 pés (6 m) de distância por 20 segundos.</li>
+</ul>
+
+<h2>O que é a regra 20-20-20?</h2>
+<p>É uma dica comum contra cansaço visual no trabalho com telas: a cada 20 minutos, olhe para algo a cerca de 20 pés de distância por 20 segundos para relaxar os músculos de foco. É fácil esquecer no meio de uma tarefa, exatamente por isso um lembrete recorrente ajuda. Defina um ciclo de 20 minutos e o CueLoop lembra você com suavidade, sempre.</p>
+
+<h2>Configure em menos de um minuto</h2>
+<ol>
+  <li>Toque para adicionar um ciclo de lembrete e dê um nome, como "Água", "Postura" ou "Olhos".</li>
+  <li>Escolha um modo: vibração ou flash na tela mantém tudo silencioso em uma mesa compartilhada.</li>
+  <li>Defina o intervalo e uma janela de horas ativas para os lembretes pararem depois do trabalho.</li>
+  <li>Use o botão Testar para sentir o toque e comece na hora.</li>
+</ol>
+
+<h2>Mais calmo que um tracker gamificado</h2>
+<p>Apps como WaterMinder ou Plant Nanny transformam hidratação em registros e sequências. Isso funciona para algumas pessoas, mas adiciona atrito e uma conta. O CueLoop faz o oposto: sem registro de consumo, sem conta, sem culpa. Só um toque no momento certo para você agir e esquecer. O mesmo vale para postura e pausas para os olhos, tudo em um só lugar.</p>
+
+<h2>Lembretes confiáveis e pontuais</h2>
+<p>O CueLoop usa alarmes exatos do Android e um serviço em primeiro plano para manter os lembretes de mesa próximos do horário. Em alguns dispositivos, pode ser necessário permitir notificações, conceder permissão de alarme exato (Android 12+) ou excluir o app da otimização de bateria. O CueLoop leva você direto a esses ajustes.</p>
+
+<p>Quer o toque no pulso também? Veja o <a href="/cue-loop/pt-br/guides/wear-os-reminder-app.html">guia de lembretes Wear OS</a>, ou leia <a href="/cue-loop/pt-br/">como o CueLoop funciona</a>.</p>
+
+  <section class="faq">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Um app cobre água, postura e pausas para os olhos?</summary><p>Sim. Crie um ciclo separado para cada um: um toque para beber água, um reset de postura e uma pausa visual 20-20-20, cada um com seu próprio ritmo e modo.</p></details>
+    <details><summary>O que é a regra 20-20-20?</summary><p>A cada 20 minutos, olhe para algo a cerca de 20 pés (6 m) de distância por 20 segundos para descansar os olhos. Defina um ciclo de 20 minutos e o CueLoop lembra você.</p></details>
+    <details><summary>Qual a diferença para um app de controle de água?</summary><p>Trackers gamificados como WaterMinder ou Plant Nanny pedem registro do consumo e criam sequências. O CueLoop só dá um toque calmo e no momento certo: sem registro, sem conta, sem culpa.</p></details>
+    <details><summary>Os lembretes podem ficar silenciosos no trabalho?</summary><p>Sim. Use vibração ou um breve flash na tela em vez de som, para o lembrete de mesa não incomodar o ambiente.</p></details>
+  </section>
+  <section class="related">
+    <h2>Guias relacionados</h2>
+    <ul>
+      <li><a href="/cue-loop/pt-br/guides/wear-os-reminder-app.html">App de lembrete Wear OS</a></li>
+      <li><a href="/cue-loop/pt-br/guides/gentle-pomodoro-alternative.html">Alternativa suave ao Pomodoro</a></li>
+      <li><a href="/cue-loop/pt-br/guides/adhd-reminder-app.html">App de lembretes para TDAH</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>Pronto para testar?</h2>
+    <p>O CueLoop é grátis para instalar. Um lembrete pronto em segundos.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-pt-BR.svg" alt="Baixar no Google Play" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/pt-br/privacy.html">Privacidade</a>
+      <a href="mailto:northforceapps@protonmail.com">Contato</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

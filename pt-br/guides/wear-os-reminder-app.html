@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App de lembrete para Wear OS — toques recorrentes no seu pulso — CueLoop</title>
+<meta name="description" content="Receba lembretes recorrentes suaves direto no seu relógio Wear OS. O CueLoop espelha lembretes para Pixel Watch, Galaxy Watch e outros, para uma vibração no pulso manter você no ritmo quando o celular está longe. Um app simples de lembretes recorrentes para Wear OS.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="Wear OS lembrete, app de lembrete para smartwatch, lembrete recorrente smartwatch, Pixel Watch lembrete, Galaxy Watch lembrete, lembrete no pulso, lembrete por intervalo smartwatch">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="pt-BR">
+<meta property="og:title" content="App de lembrete para Wear OS — toques recorrentes no seu pulso">
+<meta property="og:description" content="Receba lembretes recorrentes suaves direto no seu relógio Wear OS. O CueLoop espelha lembretes para Pixel Watch, Galaxy Watch e outros, para uma vibração no pulso manter você no ritmo quando o celular está longe. Um app simples de lembretes recorrentes para Wear OS.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="App de lembrete para Wear OS — toques recorrentes no seu pulso">
+<meta name="twitter:description" content="Receba lembretes recorrentes suaves direto no seu relógio Wear OS. O CueLoop espelha lembretes para Pixel Watch, Galaxy Watch e outros, para uma vibração no pulso manter você no ritmo quando o celular está longe. Um app simples de lembretes recorrentes para Wear OS.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "pt-BR",
+  "headline": "App de lembrete para Wear OS — toques recorrentes no seu pulso",
+  "description": "Receba lembretes recorrentes suaves direto no seu relógio Wear OS. O CueLoop espelha lembretes para Pixel Watch, Galaxy Watch e outros, para uma vibração no pulso manter você no ritmo quando o celular está longe. Um app simples de lembretes recorrentes para Wear OS.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-BR",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Preciso estar com o celular por perto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os lembretes são agendados no celular e aparecem no relógio como notificações. Assim, o relógio os mostra quando está ao alcance do celular, como no uso normal do Wear OS. A vibração no pulso ajuda você a notar mesmo com o celular no bolso ou longe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais relógios funcionam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Qualquer relógio Wear OS que espelhe notificações do celular, incluindo Pixel Watch, Samsung Galaxy Watch e outros modelos Wear OS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O relógio pode vibrar em silêncio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Escolha vibração para um toque discreto no pulso, sem som. Bom para reuniões, escritórios e bibliotecas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Com que frequência ele pode lembrar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Com a frequência que você quiser. Defina a cadência em segundos, minutos ou horas, com uma janela de horas ativas para ficar quieto fora do horário."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/pt-br/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/pt-br/#features">Recursos</a>
+      <a class="nav-sec" href="/cue-loop/pt-br/#how">Como funciona</a>
+      <a href="/cue-loop/pt-br/guides/">Guias</a>
+      <details class="lang"><summary><span class="flag">🇧🇷</span> <span class="lang-label">Português</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/wear-os-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/wear-os-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/wear-os-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/wear-os-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/wear-os-reminder-app.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">🇧🇷 Português</a><a href="/cue-loop/ja/guides/wear-os-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/wear-os-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/pt-br/guides/">← Todos os guias</a></p>
+  <h1>App de lembrete para Wear OS — toques recorrentes no seu pulso</h1>
+  <img class="guide-hero" src="/cue-loop/assets/pt-BR/scene-05-watch-walk.jpg" alt="Um relógio Wear OS vibra com um lembrete suave durante uma caminhada" loading="lazy">
+<p class="lede">Um bom <strong>app de lembrete para Wear OS</strong> coloca um toque suave no seu pulso para você agir sem tirar o celular do bolso. <a href="/cue-loop/pt-br/">CueLoop</a> agenda lembretes recorrentes no celular Android e os espelha para o relógio como notificações: uma vibração leve no Pixel Watch, Galaxy Watch ou outro dispositivo Wear OS, exatamente no ritmo que você escolher.</p>
+
+<h2>Por que um lembrete no pulso funciona melhor</h2>
+<p>Lembretes no celular são fáceis de perder: o aparelho está na bolsa, virado para baixo ou no silencioso. Um lembrete no pulso fica onde você sente. Para hábitos recorrentes, como água, postura, pausas para os olhos, movimento e checagens de foco, uma vibração discreta a cada 20 ou 30 minutos mantém você no caminho sem puxar você para o celular.</p>
+
+<h2>Como o CueLoop envia lembretes para o relógio</h2>
+<ol>
+  <li><strong>Crie um ciclo de lembrete</strong> no celular: dê um nome, escolha um modo (som suave, vibração discreta ou breve flash na tela) e defina o intervalo.</li>
+  <li><strong>Defina sua cadência e horas ativas</strong> para os lembretes acontecerem só quando você quiser, por exemplo das 9:00 às 17:00 em dias de trabalho.</li>
+  <li><strong>Use o relógio normalmente.</strong> Quando o lembrete dispara, a notificação é espelhada para o relógio Wear OS pelo sistema padrão de notificações do Android, e você sente a vibração no pulso na hora.</li>
+</ol>
+
+<h2>Quais relógios funcionam?</h2>
+<p>Qualquer relógio Wear OS que espelhe notificações do celular mostra os lembretes do CueLoop, incluindo modelos Google Pixel Watch e Samsung Galaxy Watch. O relógio mostra os lembretes enquanto está conectado ao celular, na configuração normal do Wear OS. A vibração no pulso é o que torna o toque difícil de ignorar, mesmo com o celular no bolso.</p>
+
+<h2>Mantenha discreto quando precisar</h2>
+<p>Escolha vibração para que o lembrete seja um toque discreto no pulso, sem som. Ideal em reuniões, escritórios e bibliotecas. Ou use um som suave em casa, e flash na tela quando até a vibração for demais. Cada ciclo tem seu próprio modo, então um lembrete silencioso de postura e um som leve de hidratação podem rodar lado a lado.</p>
+
+<h2>Uma alternativa calma a apps pesados de lembrete</h2>
+<p>Muitos apps de lembrete e hábito usam sequências, pontuações e contas. O CueLoop fica pequeno de propósito: sem cadastro, sem nuvem, sem rastreamento no app principal. Só lembretes recorrentes confiáveis, no celular e no pulso. Ele usa alarmes exatos do Android e um serviço em primeiro plano para os lembretes ficarem próximos do horário em vez de atrasarem.</p>
+
+<p>Veja <a href="/cue-loop/pt-br/">como o CueLoop funciona</a>, ou configure hábitos de mesa com o <a href="/cue-loop/pt-br/guides/desk-break-reminder-app.html">guia de lembrete de pausa</a>.</p>
+
+  <section class="faq">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso estar com o celular por perto?</summary><p>Os lembretes são agendados no celular e aparecem no relógio como notificações. Assim, o relógio os mostra quando está ao alcance do celular, como no uso normal do Wear OS. A vibração no pulso ajuda você a notar mesmo com o celular no bolso ou longe.</p></details>
+    <details><summary>Quais relógios funcionam?</summary><p>Qualquer relógio Wear OS que espelhe notificações do celular, incluindo Pixel Watch, Samsung Galaxy Watch e outros modelos Wear OS.</p></details>
+    <details><summary>O relógio pode vibrar em silêncio?</summary><p>Sim. Escolha vibração para um toque discreto no pulso, sem som. Bom para reuniões, escritórios e bibliotecas.</p></details>
+    <details><summary>Com que frequência ele pode lembrar?</summary><p>Com a frequência que você quiser. Defina a cadência em segundos, minutos ou horas, com uma janela de horas ativas para ficar quieto fora do horário.</p></details>
+  </section>
+  <section class="related">
+    <h2>Guias relacionados</h2>
+    <ul>
+      <li><a href="/cue-loop/pt-br/guides/desk-break-reminder-app.html">App de lembrete de pausa</a></li>
+      <li><a href="/cue-loop/pt-br/guides/gentle-pomodoro-alternative.html">Alternativa suave ao Pomodoro</a></li>
+      <li><a href="/cue-loop/pt-br/guides/adhd-reminder-app.html">App de lembretes para TDAH</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>Pronto para testar?</h2>
+    <p>O CueLoop é grátis para instalar. Um lembrete pronto em segundos.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-pt-BR.svg" alt="Baixar no Google Play" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/pt-br/privacy.html">Privacidade</a>
+      <a href="mailto:northforceapps@protonmail.com">Contato</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

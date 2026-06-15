@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App de recordatorios TDAH — avisos suaves para la ceguera temporal — CueLoop</title>
+<meta name="description" content="¿Pierdes la noción del tiempo? CueLoop da avisos estables y recurrentes: sonido, vibración o destello en tu teléfono y reloj Wear OS para anclar el día y suavizar la ceguera temporal. Una app de recordatorios tranquila y de baja fricción, útil para TDAH.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/es/guides/adhd-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="app TDAH recordatorios, ceguera temporal TDAH, recordatorio recurrente TDAH, app avisos TDAH, recordatorio suave concentración, alternativa body doubling">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/adhd-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/adhd-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="es">
+<meta property="og:title" content="App de recordatorios TDAH — avisos suaves para la ceguera temporal">
+<meta property="og:description" content="¿Pierdes la noción del tiempo? CueLoop da avisos estables y recurrentes: sonido, vibración o destello en tu teléfono y reloj Wear OS para anclar el día y suavizar la ceguera temporal. Una app de recordatorios tranquila y de baja fricción, útil para TDAH.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/es/guides/adhd-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="App de recordatorios TDAH — avisos suaves para la ceguera temporal">
+<meta name="twitter:description" content="¿Pierdes la noción del tiempo? CueLoop da avisos estables y recurrentes: sonido, vibración o destello en tu teléfono y reloj Wear OS para anclar el día y suavizar la ceguera temporal. Una app de recordatorios tranquila y de baja fricción, útil para TDAH.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "es",
+  "headline": "App de recordatorios TDAH — avisos suaves para la ceguera temporal",
+  "description": "¿Pierdes la noción del tiempo? CueLoop da avisos estables y recurrentes: sonido, vibración o destello en tu teléfono y reloj Wear OS para anclar el día y suavizar la ceguera temporal. Una app de recordatorios tranquila y de baja fricción, útil para TDAH.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/es/guides/adhd-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo ayuda CueLoop con la ceguera temporal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los avisos recurrentes y estables marcan el paso del tiempo para que las horas no desaparezcan. Un toque cada 20-30 minutos puede anclar cambios de tarea, pausas, agua y movimiento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es fácil de configurar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Los selectores de rueda, el botón de prueba instantánea y la opción de empezar ahora permiten tener un aviso funcionando en segundos, sin onboarding largo ni planificación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo recibir avisos en el reloj?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Los avisos se reflejan en un reloj Wear OS como una vibración en la muñeca, fácil de notar y difícil de ignorar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Insiste con rachas o culpa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. No hay rachas, puntuaciones ni muros sociales: solo un aviso suave y fiable cuando lo pediste."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/es/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/es/#features">Funciones</a>
+      <a class="nav-sec" href="/cue-loop/es/#how">Cómo funciona</a>
+      <a href="/cue-loop/es/guides/">Guías</a>
+      <details class="lang"><summary><span class="flag">🇪🇸</span> <span class="lang-label">Español</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/adhd-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/adhd-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/adhd-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/adhd-reminder-app.html" hreflang="es" lang="es" aria-current="true">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/adhd-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/adhd-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/adhd-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/es/guides/">← Todas las guías</a></p>
+  <h1>App de recordatorios TDAH — avisos suaves para la ceguera temporal</h1>
+  <img class="guide-hero" src="/cue-loop/assets/es/scene-04-breathing.jpg" alt="Un aviso recurrente tranquilo ayuda a anclar el día" loading="lazy">
+<p class="lede">Cuando el tiempo se escapa, los avisos constantes ayudan más que los planificadores largos. Una <strong>app de recordatorios TDAH</strong> sencilla puede anclar el día con señales recurrentes difíciles de ignorar. <a href="/cue-loop/es/">CueLoop</a> te da recordatorios suaves y repetidos: sonido, vibración o destello de pantalla en el teléfono y en tu reloj Wear OS, para aliviar la ceguera temporal y ayudarte a seguir en movimiento.</p>
+
+<h2>Cómo ayudan los avisos recurrentes con la ceguera temporal</h2>
+<p>La ceguera temporal hace que las horas desaparezcan: te sientas "unos minutos" y miras arriba mucho después. Los avisos recurrentes lo rompen marcando el paso del tiempo. Un toque cada 20-30 minutos es un punto de control sin presión: beber agua, cambiar de tarea, levantarte o simplemente notar dónde se fue el tiempo, sin mirar el reloj constantemente.</p>
+
+<h2>Diseñado con poca fricción</h2>
+<p>La configuración es rápida a propósito: selectores de rueda, botón de prueba instantánea y opción de empezar ahora para tener un aviso funcionando en segundos. No hay onboarding largo, rutina compleja que construir ni cuenta que crear. Si una herramienta cuesta empezar a usarla, no se usa; por eso CueLoop mantiene el camino corto.</p>
+
+<h2>Configura una señal ancla</h2>
+<ol>
+  <li>Añade un ciclo de aviso con el nombre de lo que necesitas: "Mirar la hora", "Cambiar de tarea", "Agua".</li>
+  <li>Define un intervalo de 20-30 minutos y unas horas activas que encajen con tu día.</li>
+  <li>Elige un modo: una vibración en la muñeca va muy bien para TDAH porque es física y difícil de ignorar.</li>
+  <li>Ejecuta varios en paralelo: movimiento, hidratación, revisión de foco, cada uno con su propio ritmo.</li>
+</ol>
+
+<h2>Sin rachas, sin culpa</h2>
+<p>Muchas apps de hábitos y TDAH usan rachas, puntos y muros sociales, lo que puede volverse en contra cuando un día perdido se siente como fracaso. CueLoop no tiene nada de eso: solo una señal suave y fiable cuando la pediste. ¿La perdiste? No pasa nada; el siguiente aviso llega igual.</p>
+
+<h2>Llévalo a tu muñeca</h2>
+<p>Los avisos se reflejan en un reloj Wear OS como vibración, fácil de sentir y difícil de ignorar incluso cuando el teléfono no está cerca. Consulta la <a href="/cue-loop/es/guides/wear-os-reminder-app.html">guía de recordatorios Wear OS</a>, o prueba un ritmo de foco con la <a href="/cue-loop/es/guides/gentle-pomodoro-alternative.html">alternativa suave a Pomodoro</a>.</p>
+
+<p>CueLoop funciona primero sin conexión y se instala gratis. Mira <a href="/cue-loop/es/">cómo funciona</a>.</p>
+
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Cómo ayuda CueLoop con la ceguera temporal?</summary><p>Los avisos recurrentes y estables marcan el paso del tiempo para que las horas no desaparezcan. Un toque cada 20-30 minutos puede anclar cambios de tarea, pausas, agua y movimiento.</p></details>
+    <details><summary>¿Es fácil de configurar?</summary><p>Sí. Los selectores de rueda, el botón de prueba instantánea y la opción de empezar ahora permiten tener un aviso funcionando en segundos, sin onboarding largo ni planificación.</p></details>
+    <details><summary>¿Puedo recibir avisos en el reloj?</summary><p>Sí. Los avisos se reflejan en un reloj Wear OS como una vibración en la muñeca, fácil de notar y difícil de ignorar.</p></details>
+    <details><summary>¿Insiste con rachas o culpa?</summary><p>No. No hay rachas, puntuaciones ni muros sociales: solo un aviso suave y fiable cuando lo pediste.</p></details>
+  </section>
+  <section class="related">
+    <h2>Guías relacionadas</h2>
+    <ul>
+      <li><a href="/cue-loop/es/guides/wear-os-reminder-app.html">App de recordatorios Wear OS</a></li>
+      <li><a href="/cue-loop/es/guides/desk-break-reminder-app.html">App de pausas de escritorio</a></li>
+      <li><a href="/cue-loop/es/guides/gentle-pomodoro-alternative.html">Alternativa suave a Pomodoro</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>¿Listo para probarlo?</h2>
+    <p>CueLoop se instala gratis. Un aviso listo en segundos.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-es.svg" alt="Consíguelo en Google Play" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/es/privacy.html">Privacidad</a>
+      <a href="mailto:northforceapps@protonmail.com">Contacto</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

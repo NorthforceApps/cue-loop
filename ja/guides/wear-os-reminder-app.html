@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wear OSリマインダーアプリ — 手首に繰り返しの合図 — CueLoop</title>
+<meta name="description" content="Wear OSウォッチで、やさしい繰り返しリマインダーを受け取れます。CueLoopはPixel Watch、Galaxy Watchなどに合図をミラーし、スマホが離れていても手首の振動で気づけます。Wear OS向けのシンプルな繰り返しリマインダーアプリです。">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="Wear OS リマインダー, スマートウォッチ リマインダー, Pixel Watch リマインダー, Galaxy Watch リマインダー, 手首 リマインダー, インターバル リマインダー スマートウォッチ">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="Wear OSリマインダーアプリ — 手首に繰り返しの合図">
+<meta property="og:description" content="Wear OSウォッチで、やさしい繰り返しリマインダーを受け取れます。CueLoopはPixel Watch、Galaxy Watchなどに合図をミラーし、スマホが離れていても手首の振動で気づけます。Wear OS向けのシンプルな繰り返しリマインダーアプリです。">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wear OSリマインダーアプリ — 手首に繰り返しの合図">
+<meta name="twitter:description" content="Wear OSウォッチで、やさしい繰り返しリマインダーを受け取れます。CueLoopはPixel Watch、Galaxy Watchなどに合図をミラーし、スマホが離れていても手首の振動で気づけます。Wear OS向けのシンプルな繰り返しリマインダーアプリです。">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ja",
+  "headline": "Wear OSリマインダーアプリ — 手首に繰り返しの合図",
+  "description": "Wear OSウォッチで、やさしい繰り返しリマインダーを受け取れます。CueLoopはPixel Watch、Galaxy Watchなどに合図をミラーし、スマホが離れていても手首の振動で気づけます。Wear OS向けのシンプルな繰り返しリマインダーアプリです。",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "スマホを近くに置く必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "合図はスマホでスケジュールされ、通知としてウォッチにミラーされます。通常のWear OS設定と同じく、ウォッチがスマホの範囲内にある時に表示されます。手首のバイブで、スマホがポケットや部屋の反対側にあっても気づきやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのウォッチで使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "スマホ通知をミラーできるWear OSウォッチなら使えます。Pixel Watch、Samsung Galaxy Watch、その他のWear OSモデルを含みます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ウォッチを無音で振動させられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。バイブを選ぶと、音なしの控えめな手首タップになります。会議、オフィス、図書館に向いています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのくらい頻繁に知らせられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "好きな頻度にできます。秒、分、時間で間隔を設定し、有効時間を使えば時間外は静かにできます。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ja/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ja/#features">機能</a>
+      <a class="nav-sec" href="/cue-loop/ja/#how">使い方</a>
+      <a href="/cue-loop/ja/guides/">ガイド</a>
+      <details class="lang"><summary><span class="flag">🇯🇵</span> <span class="lang-label">日本語</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/wear-os-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/wear-os-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/wear-os-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/wear-os-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/wear-os-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/wear-os-reminder-app.html" hreflang="ja" lang="ja" aria-current="true">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/wear-os-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ja/guides/">← すべてのガイド</a></p>
+  <h1>Wear OSリマインダーアプリ — 手首に繰り返しの合図</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ja/scene-05-watch-walk.jpg" alt="散歩中にWear OSウォッチがやさしい合図で振動する" loading="lazy">
+<p class="lede">良い<strong>Wear OSリマインダーアプリ</strong>は、スマホを取り出さなくても行動できるように、手首にやさしい合図を出します。<a href="/cue-loop/ja/">CueLoop</a>はAndroidスマホで繰り返しの合図をスケジュールし、通知としてウォッチにミラーします。Pixel Watch、Galaxy Watch、その他のWear OSデバイスで、選んだ間隔どおりに軽く振動します。</p>
+
+<h2>手首のリマインダーが効きやすい理由</h2>
+<p>スマホのリマインダーは見逃しやすいものです。バッグの中、画面を下にして置いてある、サイレントになっている、などがよくあります。手首のリマインダーは、感じられる場所にあります。水分補給、姿勢、目の休憩、運動、集中チェックなどの繰り返し習慣では、20分または30分ごとの静かなバイブが、スマホに引き込まれずにリズムを保つ助けになります。</p>
+
+<h2>CueLoopがウォッチへ合図を届ける仕組み</h2>
+<ol>
+  <li><strong>スマホでcue loopを作る</strong>。名前を付け、やさしい音、軽いバイブ、短い画面フラッシュからモードを選び、間隔を決めます。</li>
+  <li><strong>間隔と有効時間を設定</strong>。たとえば平日の9:00〜17:00だけなど、必要な時間だけ合図を出します。</li>
+  <li><strong>いつもどおりウォッチを着ける</strong>。合図が鳴ると、Androidの標準通知ミラーでWear OSウォッチに届き、その場で手首にバイブが来ます。</li>
+</ol>
+
+<h2>どのウォッチで使えますか？</h2>
+<p>スマホ通知をミラーできるWear OSウォッチなら、CueLoopの合図を表示できます。Google Pixel WatchやSamsung Galaxy Watchの各モデルも含みます。通常のWear OSペアリングと同じく、ウォッチがスマホに接続されている間に表示されます。スマホがポケットにあっても、手首のバイブで気づきやすくなります。</p>
+
+<h2>必要な時は静かに</h2>
+<p>バイブを選べば、音なしの控えめな手首タップになります。会議、オフィス、図書館に向いています。家ではやさしい音、バイブも強すぎる時は画面フラッシュも選べます。各cue loopは別々のモードにできるので、無音の姿勢合図と柔らかな水分補給音を並べて使えます。</p>
+
+<h2>重いリマインダーアプリの落ち着いた代替</h2>
+<p>多くのリマインダーや習慣アプリは、連続記録、点数、アカウントに寄せています。CueLoopは意図的に小さくしています。登録不要、クラウドなし、主要アプリでのトラッキングなし。スマホと手首に、確実な繰り返し合図を出すだけです。Androidの正確なアラームとフォアグラウンドサービスで、合図がずれにくくなります。</p>
+
+<p><a href="/cue-loop/ja/">CueLoopの仕組み</a>を見るか、<a href="/cue-loop/ja/guides/desk-break-reminder-app.html">デスク休憩リマインダーガイド</a>でデスク習慣を設定してください。</p>
+
+  <section class="faq">
+    <h2>よくある質問</h2>
+    <details><summary>スマホを近くに置く必要がありますか？</summary><p>合図はスマホでスケジュールされ、通知としてウォッチにミラーされます。通常のWear OS設定と同じく、ウォッチがスマホの範囲内にある時に表示されます。手首のバイブで、スマホがポケットや部屋の反対側にあっても気づきやすくなります。</p></details>
+    <details><summary>どのウォッチで使えますか？</summary><p>スマホ通知をミラーできるWear OSウォッチなら使えます。Pixel Watch、Samsung Galaxy Watch、その他のWear OSモデルを含みます。</p></details>
+    <details><summary>ウォッチを無音で振動させられますか？</summary><p>はい。バイブを選ぶと、音なしの控えめな手首タップになります。会議、オフィス、図書館に向いています。</p></details>
+    <details><summary>どのくらい頻繁に知らせられますか？</summary><p>好きな頻度にできます。秒、分、時間で間隔を設定し、有効時間を使えば時間外は静かにできます。</p></details>
+  </section>
+  <section class="related">
+    <h2>関連ガイド</h2>
+    <ul>
+      <li><a href="/cue-loop/ja/guides/desk-break-reminder-app.html">デスク休憩リマインダー</a></li>
+      <li><a href="/cue-loop/ja/guides/gentle-pomodoro-alternative.html">やさしいPomodoro代替</a></li>
+      <li><a href="/cue-loop/ja/guides/adhd-reminder-app.html">ADHDリマインダーアプリ</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>試してみますか？</h2>
+    <p>CueLoopは無料でインストールできます。数秒で合図を開始できます。</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ja.svg" alt="Google Playで入手" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ja/privacy.html">プライバシー</a>
+      <a href="mailto:northforceapps@protonmail.com">お問い合わせ</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

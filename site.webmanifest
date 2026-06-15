@@ -1,0 +1,13 @@
+{
+  "name": "CueLoop",
+  "short_name": "CueLoop",
+  "description": "Gentle recurring reminders for Android and Wear OS — a soft sound, buzz or screen flash on your own cadence.",
+  "start_url": "/cue-loop/",
+  "scope": "/cue-loop/",
+  "display": "standalone",
+  "background_color": "#eaf3f1",
+  "theme_color": "#0e8f72",
+  "icons": [
+    { "src": "assets/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

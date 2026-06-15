@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>やさしいPomodoro代替 — ロックアウトなしの集中合図 — CueLoop</title>
+<meta name="description" content="強いタイマーやアプリブロッカーなしで集中スプリントをしたいですか？CueLoopは作業と休憩の切り替えを、やさしい音、バイブ、フラッシュで知らせます。厳しいPomodoroタイマーやForestのような集中アプリより落ち着いた代替です。">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ja/guides/gentle-pomodoro-alternative.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="Pomodoro 代替, やさしいポモドーロ, 集中 リマインダー アプリ, インターバル 集中 タイマー, 仕事 休憩 リマインダー, Forest アプリ 代替">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/gentle-pomodoro-alternative.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/gentle-pomodoro-alternative.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="やさしいPomodoro代替 — ロックアウトなしの集中合図">
+<meta property="og:description" content="強いタイマーやアプリブロッカーなしで集中スプリントをしたいですか？CueLoopは作業と休憩の切り替えを、やさしい音、バイブ、フラッシュで知らせます。厳しいPomodoroタイマーやForestのような集中アプリより落ち着いた代替です。">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ja/guides/gentle-pomodoro-alternative.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="やさしいPomodoro代替 — ロックアウトなしの集中合図">
+<meta name="twitter:description" content="強いタイマーやアプリブロッカーなしで集中スプリントをしたいですか？CueLoopは作業と休憩の切り替えを、やさしい音、バイブ、フラッシュで知らせます。厳しいPomodoroタイマーやForestのような集中アプリより落ち着いた代替です。">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ja",
+  "headline": "やさしいPomodoro代替 — ロックアウトなしの集中合図",
+  "description": "強いタイマーやアプリブロッカーなしで集中スプリントをしたいですか？CueLoopは作業と休憩の切り替えを、やさしい音、バイブ、フラッシュで知らせます。厳しいPomodoroタイマーやForestのような集中アプリより落ち着いた代替です。",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/ja/guides/gentle-pomodoro-alternative.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "アプリをブロックしたりスマホをロックしますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。CueLoopは合図を出すだけです。アプリをブロックしたり、ロックアウトしたりしません。主導権はあなたにあり、合図は作業と休憩のやさしい目印です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "25/5のPomodoroリズムを設定できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。作業用のcue loopと休憩用のcue loopを設定できます。1つの間隔で各切り替えを示す使い方もできます。自分に合う時間に調整してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Forestのようなアプリと何が違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Forestのようなゲーム化された集中アプリは、木を育てたり、アプリを離れることにペナルティを付けたりします。CueLoopは、ゲームも罰もアカウントもない、静かで確実な合図です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会議を邪魔しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "音を選んだ場合だけです。バイブや画面フラッシュを使えば、集中合図をプライベートにできます。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ja/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ja/#features">機能</a>
+      <a class="nav-sec" href="/cue-loop/ja/#how">使い方</a>
+      <a href="/cue-loop/ja/guides/">ガイド</a>
+      <details class="lang"><summary><span class="flag">🇯🇵</span> <span class="lang-label">日本語</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/gentle-pomodoro-alternative.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/gentle-pomodoro-alternative.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/gentle-pomodoro-alternative.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/gentle-pomodoro-alternative.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/gentle-pomodoro-alternative.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/gentle-pomodoro-alternative.html" hreflang="ja" lang="ja" aria-current="true">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/gentle-pomodoro-alternative.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ja/guides/">← すべてのガイド</a></p>
+  <h1>やさしいPomodoro代替 — ロックアウトなしの集中合図</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ja/scene-06-focus-sprint.jpg" alt="集中スプリントの合図で作業を落ち着いたリズムに保つ" loading="lazy">
+<p class="lede">集中スプリントの考え方は好きでも、強いタイマーやアプリブロッカーが苦手ですか？<strong>やさしいPomodoro代替</strong>なら、ロックアウトや大きなアラームなしで作業と休憩のリズムを作れます。<a href="/cue-loop/ja/">CueLoop</a>は、やさしい音、バイブ、短い画面フラッシュで集中と休憩の切り替えを知らせます。落ち着いてリズムを保つ方法です。</p>
+
+<h2>やさしい方法の違い</h2>
+<p>古典的なPomodoroは、25分作業して5分休憩を繰り返します。手法は便利ですが、道具が重いことがあります。しつこいカウントダウン、離れられない画面、別アプリに移ると罰を与えるゲームなどです。CueLoopは役立つ部分だけを残します。各切り替えを示す確実な合図です。流れを保ち、その後どうするかは自分で決められます。</p>
+
+<h2>集中リズムを設定</h2>
+<ol>
+  <li><strong>「集中」のcue loopを作る</strong> — 25分、または自分に合う作業スプリントの長さにします。</li>
+  <li><strong>「休憩」のcue loopを追加</strong> — 休憩間隔用に作るか、1つの間隔で各切り替えを示します。</li>
+  <li><strong>静かなモードを選ぶ</strong> — バイブや画面フラッシュなら共有スペースでも目立ちません。</li>
+  <li><strong>有効時間を設定</strong> — 集中の合図が作業時間だけ動くようにします。</li>
+</ol>
+
+<h2>ロックアウトも罰もなし</h2>
+<p>CueLoopはアプリをブロックせず、スマホを隠さず、席を外しても罰を与えません。Forestのような集中アプリは、タスクを続けることをゲーム化し、離れると育てた木を失う仕組みがあります。励みになる人もいれば、ストレスになる人もいます。CueLoopは静かで頼れる合図だけです。主導権はあなたにあり、合図は主人ではなく目印です。</p>
+
+<h2>深い作業やADHD的な集中にも</h2>
+<p>時間が抜け落ちやすい時は、安定した切り替え合図が役立ちます。50分のスプリントが2時間に膨らみがちなら、境目のやさしい合図が戻るきっかけになります。繰り返しの合図で1日を支える方法は、<a href="/cue-loop/ja/guides/adhd-reminder-app.html">ADHDリマインダーガイド</a>も参考になります。</p>
+
+<h2>信頼できるタイミング</h2>
+<p>合図はAndroidの正確なアラームとフォアグラウンドサービスを使い、各切り替えが予定に近い時間で届くようにします。一部の端末では、通知の許可、正確なアラーム権限（Android 12+）、バッテリー最適化の除外を有効にすると、より正確になります。CueLoopはその設定へ案内します。</p>
+
+<p><a href="/cue-loop/ja/">CueLoopの仕組み</a>を読むか、<a href="/cue-loop/ja/guides/wear-os-reminder-app.html">Wear OSリマインダーガイド</a>で同じ合図をウォッチにも設定してください。</p>
+
+  <section class="faq">
+    <h2>よくある質問</h2>
+    <details><summary>アプリをブロックしたりスマホをロックしますか？</summary><p>いいえ。CueLoopは合図を出すだけです。アプリをブロックしたり、ロックアウトしたりしません。主導権はあなたにあり、合図は作業と休憩のやさしい目印です。</p></details>
+    <details><summary>25/5のPomodoroリズムを設定できますか？</summary><p>はい。作業用のcue loopと休憩用のcue loopを設定できます。1つの間隔で各切り替えを示す使い方もできます。自分に合う時間に調整してください。</p></details>
+    <details><summary>Forestのようなアプリと何が違いますか？</summary><p>Forestのようなゲーム化された集中アプリは、木を育てたり、アプリを離れることにペナルティを付けたりします。CueLoopは、ゲームも罰もアカウントもない、静かで確実な合図です。</p></details>
+    <details><summary>会議を邪魔しますか？</summary><p>音を選んだ場合だけです。バイブや画面フラッシュを使えば、集中合図をプライベートにできます。</p></details>
+  </section>
+  <section class="related">
+    <h2>関連ガイド</h2>
+    <ul>
+      <li><a href="/cue-loop/ja/guides/wear-os-reminder-app.html">Wear OSリマインダーアプリ</a></li>
+      <li><a href="/cue-loop/ja/guides/desk-break-reminder-app.html">デスク休憩リマインダー</a></li>
+      <li><a href="/cue-loop/ja/guides/adhd-reminder-app.html">ADHDリマインダーアプリ</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>試してみますか？</h2>
+    <p>CueLoopは無料でインストールできます。数秒で合図を開始できます。</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ja.svg" alt="Google Playで入手" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ja/privacy.html">プライバシー</a>
+      <a href="mailto:northforceapps@protonmail.com">お問い合わせ</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

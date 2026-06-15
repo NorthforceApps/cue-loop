@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Application rappel Wear OS — rappels récurrents au poignet — CueLoop</title>
+<meta name="description" content="Recevez des rappels récurrents doux directement sur votre montre Wear OS. CueLoop reflète les signaux sur Pixel Watch, Galaxy Watch et autres, pour qu’une vibration au poignet vous garde sur la bonne voie quand le téléphone est loin — une app simple de rappels récurrents pour Wear OS.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="application rappel Wear OS, rappel smartwatch récurrent, application rappel Pixel Watch, rappel Galaxy Watch, rappel au poignet, rappel intervalle smartwatch">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/wear-os-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/wear-os-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="fr">
+<meta property="og:title" content="Application rappel Wear OS — rappels récurrents au poignet">
+<meta property="og:description" content="Recevez des rappels récurrents doux directement sur votre montre Wear OS. CueLoop reflète les signaux sur Pixel Watch, Galaxy Watch et autres, pour qu’une vibration au poignet vous garde sur la bonne voie quand le téléphone est loin — une app simple de rappels récurrents pour Wear OS.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Application rappel Wear OS — rappels récurrents au poignet">
+<meta name="twitter:description" content="Recevez des rappels récurrents doux directement sur votre montre Wear OS. CueLoop reflète les signaux sur Pixel Watch, Galaxy Watch et autres, pour qu’une vibration au poignet vous garde sur la bonne voie quand le téléphone est loin — une app simple de rappels récurrents pour Wear OS.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "fr",
+  "headline": "Application rappel Wear OS — rappels récurrents au poignet",
+  "description": "Recevez des rappels récurrents doux directement sur votre montre Wear OS. CueLoop reflète les signaux sur Pixel Watch, Galaxy Watch et autres, pour qu’une vibration au poignet vous garde sur la bonne voie quand le téléphone est loin — une app simple de rappels récurrents pour Wear OS.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/fr/guides/wear-os-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d’avoir mon téléphone près de moi ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les rappels sont programmés sur le téléphone et se reflètent sur la montre comme notifications. La montre les affiche donc lorsqu’elle est à portée du téléphone — la configuration Wear OS habituelle. La vibration au poignet vous aide à remarquer le signal même si le téléphone est dans la poche ou de l’autre côté de la pièce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles montres fonctionnent ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Toute montre Wear OS qui reflète les notifications du téléphone — Pixel Watch, Samsung Galaxy Watch et autres modèles Wear OS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La montre peut-elle vibrer en silence ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Choisissez la vibration pour un tapotement discret au poignet, sans son — idéal en réunion, au bureau ou à la bibliothèque."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "À quelle fréquence peut-il me rappeler ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aussi souvent que vous voulez — réglez la cadence en secondes, minutes ou heures, avec une plage d’heures actives pour rester silencieux hors horaires."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/fr/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/fr/#features">Fonctions</a>
+      <a class="nav-sec" href="/cue-loop/fr/#how">Fonctionnement</a>
+      <a href="/cue-loop/fr/guides/">Guides</a>
+      <details class="lang"><summary><span class="flag">🇫🇷</span> <span class="lang-label">Français</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/wear-os-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/wear-os-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/wear-os-reminder-app.html" hreflang="fr" lang="fr" aria-current="true">🇫🇷 Français</a><a href="/cue-loop/es/guides/wear-os-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/wear-os-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/wear-os-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/wear-os-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/fr/guides/">← Tous les guides</a></p>
+  <h1>Application rappel Wear OS — rappels récurrents au poignet</h1>
+  <img class="guide-hero" src="/cue-loop/assets/fr/scene-05-watch-walk.jpg" alt="Une montre Wear OS qui vibre avec un rappel doux pendant une marche" loading="lazy">
+<p class="lede">Une bonne <strong>application rappel Wear OS</strong> place un signal doux à votre poignet, pour agir sans sortir votre téléphone. <a href="/cue-loop/fr/">CueLoop</a> programme des rappels récurrents sur votre téléphone Android et les reflète sur votre montre sous forme de notifications — une légère vibration sur Pixel Watch, Galaxy Watch ou autre appareil Wear OS, exactement au rythme choisi.</p>
+
+<h2>Pourquoi un rappel au poignet fonctionne mieux</h2>
+<p>Les rappels sur téléphone se manquent facilement : le téléphone est dans un sac, face contre table ou en silencieux. Un rappel au poignet est là où vous le sentez. Pour les habitudes récurrentes — eau, posture, pauses visuelles, mouvement, points focus — une vibration discrète toutes les 20 ou 30 minutes vous garde sur la bonne voie sans vous attirer dans le téléphone.</p>
+
+<h2>Comment CueLoop envoie les signaux à votre montre</h2>
+<ol>
+  <li><strong>Créez une boucle</strong> sur votre téléphone : nommez-la, choisissez un mode (son doux, légère vibration ou bref flash d’écran) et réglez l’intervalle.</li>
+  <li><strong>Définissez votre cadence et vos heures actives</strong> pour que les rappels ne se déclenchent que quand vous le souhaitez — par exemple de 9 h à 17 h les jours ouvrés.</li>
+  <li><strong>Portez votre montre normalement.</strong> Quand un rappel se déclenche, la notification se reflète sur votre montre Wear OS via le relais standard d’Android, avec une vibration au poignet au bon moment.</li>
+</ol>
+
+<h2>Quelles montres fonctionnent ?</h2>
+<p>Toute montre Wear OS qui reflète les notifications du téléphone affichera les rappels CueLoop — y compris Google Pixel Watch et les modèles Samsung Galaxy Watch. La montre affiche les signaux lorsqu’elle est connectée à votre téléphone, comme dans la configuration Wear OS normale ; la vibration au poignet rend le rappel difficile à ignorer même quand le téléphone est dans la poche.</p>
+
+<h2>Rester discret quand il le faut</h2>
+<p>Choisissez la vibration pour transformer le rappel en tapotement discret au poignet, sans son — idéal en réunion, au bureau ou à la bibliothèque. Ou choisissez un son doux à la maison, et un flash d’écran quand même une vibration serait trop. Chaque boucle a son propre mode, donc un rappel de posture silencieux et un carillon doux d’hydratation peuvent tourner côte à côte.</p>
+
+<h2>Une alternative calme aux grosses apps de rappel</h2>
+<p>Beaucoup d’apps de rappels et d’habitudes misent sur les séries, les scores et les comptes. CueLoop reste volontairement léger : pas d’inscription, pas de cloud, pas de suivi dans l’app de base — seulement des rappels récurrents fiables, sur votre téléphone et à votre poignet. Il utilise les alarmes exactes Android et un service de premier plan pour rester proche de l’horaire au lieu de dériver.</p>
+
+<p>Découvrez <a href="/cue-loop/fr/">comment fonctionne CueLoop</a>, ou configurez des habitudes de bureau avec le <a href="/cue-loop/fr/guides/desk-break-reminder-app.html">guide des rappels de pause bureau</a>.</p>
+
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <details><summary>Ai-je besoin d’avoir mon téléphone près de moi ?</summary><p>Les rappels sont programmés sur le téléphone et se reflètent sur la montre comme notifications. La montre les affiche donc lorsqu’elle est à portée du téléphone — la configuration Wear OS habituelle. La vibration au poignet vous aide à remarquer le signal même si le téléphone est dans la poche ou de l’autre côté de la pièce.</p></details>
+    <details><summary>Quelles montres fonctionnent ?</summary><p>Toute montre Wear OS qui reflète les notifications du téléphone — Pixel Watch, Samsung Galaxy Watch et autres modèles Wear OS.</p></details>
+    <details><summary>La montre peut-elle vibrer en silence ?</summary><p>Oui. Choisissez la vibration pour un tapotement discret au poignet, sans son — idéal en réunion, au bureau ou à la bibliothèque.</p></details>
+    <details><summary>À quelle fréquence peut-il me rappeler ?</summary><p>Aussi souvent que vous voulez — réglez la cadence en secondes, minutes ou heures, avec une plage d’heures actives pour rester silencieux hors horaires.</p></details>
+  </section>
+  <section class="related">
+    <h2>Guides associés</h2>
+    <ul>
+      <li><a href="/cue-loop/fr/guides/desk-break-reminder-app.html">Application rappel de pause bureau</a></li>
+      <li><a href="/cue-loop/fr/guides/gentle-pomodoro-alternative.html">Alternative douce à Pomodoro</a></li>
+      <li><a href="/cue-loop/fr/guides/adhd-reminder-app.html">Application rappel TDAH</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>Prêt à essayer ?</h2>
+    <p>CueLoop est gratuit à installer. Un rappel prêt en quelques secondes.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-fr.svg" alt="Disponible sur Google Play" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/fr/privacy.html">Confidentialité</a>
+      <a href="mailto:northforceapps@protonmail.com">Contact</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bildschirmpausen App — Trinken, Haltung &amp; 20-20-20 Augenpausen — CueLoop</title>
+<meta name="description" content="Eine einfache Bildschirmpausen App für Büro und Homeoffice: CueLoop erinnert dich ans Wassertrinken, an bessere Haltung und an Augenpausen nach der 20-20-20 Regel. Eine ruhige Alternative ohne Konto zu gamifizierten Trackern wie WaterMinder oder Plant Nanny.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/de/guides/desk-break-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="Bildschirmpausen App, Pausen Erinnerung, Trink Erinnerung App, Wasser trinken Erinnerung, Haltungs Erinnerung, 20-20-20 Augenpause, Augenpause App, Dehn Erinnerung, Alternative zu WaterMinder, Alternative zu Plant Nanny">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/desk-break-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/desk-break-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="de">
+<meta property="og:title" content="Bildschirmpausen App — Trinken, Haltung &amp; 20-20-20 Augenpausen">
+<meta property="og:description" content="Eine einfache Bildschirmpausen App für Büro und Homeoffice: CueLoop erinnert dich ans Wassertrinken, an bessere Haltung und an Augenpausen nach der 20-20-20 Regel. Eine ruhige Alternative ohne Konto zu gamifizierten Trackern wie WaterMinder oder Plant Nanny.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/de/guides/desk-break-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bildschirmpausen App — Trinken, Haltung &amp; 20-20-20 Augenpausen">
+<meta name="twitter:description" content="Eine einfache Bildschirmpausen App für Büro und Homeoffice: CueLoop erinnert dich ans Wassertrinken, an bessere Haltung und an Augenpausen nach der 20-20-20 Regel. Eine ruhige Alternative ohne Konto zu gamifizierten Trackern wie WaterMinder oder Plant Nanny.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "de",
+  "headline": "Bildschirmpausen App — Trinken, Haltung & 20-20-20 Augenpausen",
+  "description": "Eine einfache Bildschirmpausen App für Büro und Homeoffice: CueLoop erinnert dich ans Wassertrinken, an bessere Haltung und an Augenpausen nach der 20-20-20 Regel. Eine ruhige Alternative ohne Konto zu gamifizierten Trackern wie WaterMinder oder Plant Nanny.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/de/guides/desk-break-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kann eine App Wasser, Haltung und Augenpausen abdecken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Erstelle für jede Gewohnheit einen eigenen Cue-Loop — einen Trink-Cue, einen Haltungs-Reset und eine 20-20-20 Augenpause — jeweils mit eigenem Rhythmus und Modus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist die 20-20-20 Regel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alle 20 Minuten schaust du 20 Sekunden lang auf etwas in etwa 20 Fuß (6 m) Entfernung, damit deine Augen sich erholen. Stelle einen Cue-Loop auf 20 Minuten, und CueLoop erinnert dich daran."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist anders als bei einer Wassertracker-App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gamifizierte Tracker wie WaterMinder oder Plant Nanny wollen, dass du deine Trinkmenge protokollierst und Streaks aufbaust. CueLoop gibt dir nur einen ruhigen, gut getimten Impuls — kein Protokollieren, kein Konto, kein schlechtes Gewissen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Können die Erinnerungen bei der Arbeit lautlos bleiben?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Nutze Vibration oder ein kurzes Bildschirmblinken statt Ton, damit ein Schreibtisch-Cue den Raum nicht stört."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/de/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/de/#features">Funktionen</a>
+      <a class="nav-sec" href="/cue-loop/de/#how">So funktioniert es</a>
+      <a href="/cue-loop/de/guides/">Ratgeber</a>
+      <details class="lang"><summary><span class="flag">🇩🇪</span> <span class="lang-label">Deutsch</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/desk-break-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/desk-break-reminder-app.html" hreflang="de" lang="de" aria-current="true">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/desk-break-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/desk-break-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/desk-break-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/desk-break-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/desk-break-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/de/guides/">← Alle Ratgeber</a></p>
+  <h1>Bildschirmpausen App — Trinken, Haltung &amp; 20-20-20 Augenpausen</h1>
+  <img class="guide-hero" src="/cue-loop/assets/de/scene-01-hydration.jpg" alt="Ein sanfter Trink-Cue kommt am Schreibtisch an" loading="lazy">
+<p class="lede">Wenn du den ganzen Tag am Bildschirm sitzt, kann eine einfache <strong>Bildschirmpausen App</strong> viel bewirken: ein Impuls zum Wassertrinken, ein Hinweis für bessere Haltung und ein Cue für Augenpausen nach der 20-20-20 Regel. <a href="/cue-loop/de/">CueLoop</a> führt alle drei als sanfte wiederkehrende Cues in deinem eigenen Rhythmus aus — mit leisem Ton, Vibration oder ruhigem Bildschirmblinken — ohne Konto und ohne Protokollieren.</p>
+
+<h2>Eine App, drei Schreibtisch-Gewohnheiten</h2>
+<p>Erstelle für jede Gewohnheit einen eigenen Cue-Loop und gib jedem seinen eigenen Rhythmus:</p>
+<ul>
+  <li><strong>Trink-Erinnerung</strong> — ein Wassertrink-Impuls alle 30–60 Minuten.</li>
+  <li><strong>Haltungs-Erinnerung</strong> — ein „aufrichten, Schultern lockern“-Cue alle 20–30 Minuten.</li>
+  <li><strong>Augenpausen (20-20-20)</strong> — alle 20 Minuten etwa 20 Fuß (6 m) weit wegschauen, 20 Sekunden lang.</li>
+</ul>
+
+<h2>Was ist die 20-20-20 Regel?</h2>
+<p>Das ist ein verbreiteter Tipp gegen Augenbelastung bei Bildschirmarbeit: alle 20 Minuten 20 Sekunden lang auf etwas in etwa 20 Fuß Entfernung schauen, damit sich die Fokussiermuskeln entspannen. Mitten in der Arbeit vergisst man das leicht — genau dafür ist ein wiederkehrender Cue da. Stelle einen Cue-Loop auf 20 Minuten, und CueLoop erinnert dich jedes Mal sanft.</p>
+
+<h2>In unter einer Minute eingerichtet</h2>
+<ol>
+  <li>Tippe, um einen Cue-Loop hinzuzufügen, und benenne ihn, z. B. „Wasser“, „Haltung“, „Augen“.</li>
+  <li>Wähle einen Modus — Vibration oder Bildschirmblinken bleibt am gemeinsamen Schreibtisch lautlos.</li>
+  <li>Lege Intervall und aktive Zeiten fest, damit Cues nach der Arbeit stoppen.</li>
+  <li>Nutze den sofortigen Test-Button, spüre den Cue und starte direkt.</li>
+</ol>
+
+<h2>Ruhiger als ein gamifizierter Tracker</h2>
+<p>Apps wie WaterMinder oder Plant Nanny machen Trinken zu Protokollen und Streaks. Das funktioniert für manche, bringt aber auch Aufwand und oft ein Konto mit. CueLoop macht das Gegenteil: keine Trinkmengen erfassen, kein Konto, kein schlechtes Gewissen — nur ein gut getimter Impuls, den du nutzen und wieder vergessen kannst. Dasselbe gilt für Haltung und Augenpausen, alles an einem Ort.</p>
+
+<h2>Zuverlässige, pünktliche Cues</h2>
+<p>CueLoop nutzt exakte Android Alarme plus einen Vordergrunddienst, damit Schreibtisch-Cues nah am Zeitplan bleiben. Auf manchen Geräten musst du Benachrichtigungen erlauben, die Berechtigung für exakte Alarme erteilen (Android 12+) oder die App von der Akkuoptimierung ausnehmen — CueLoop verlinkt dich direkt zu diesen Einstellungen.</p>
+
+<p>Du möchtest den Impuls auch am Handgelenk? Lies den <a href="/cue-loop/de/guides/wear-os-reminder-app.html">Wear OS Erinnerungs-Ratgeber</a> oder erfahre, <a href="/cue-loop/de/">wie CueLoop funktioniert</a>.</p>
+
+  <section class="faq">
+    <h2>Häufige Fragen</h2>
+    <details><summary>Kann eine App Wasser, Haltung und Augenpausen abdecken?</summary><p>Ja. Erstelle für jede Gewohnheit einen eigenen Cue-Loop — einen Trink-Cue, einen Haltungs-Reset und eine 20-20-20 Augenpause — jeweils mit eigenem Rhythmus und Modus.</p></details>
+    <details><summary>Was ist die 20-20-20 Regel?</summary><p>Alle 20 Minuten schaust du 20 Sekunden lang auf etwas in etwa 20 Fuß (6 m) Entfernung, damit deine Augen sich erholen. Stelle einen Cue-Loop auf 20 Minuten, und CueLoop erinnert dich daran.</p></details>
+    <details><summary>Was ist anders als bei einer Wassertracker-App?</summary><p>Gamifizierte Tracker wie WaterMinder oder Plant Nanny wollen, dass du deine Trinkmenge protokollierst und Streaks aufbaust. CueLoop gibt dir nur einen ruhigen, gut getimten Impuls — kein Protokollieren, kein Konto, kein schlechtes Gewissen.</p></details>
+    <details><summary>Können die Erinnerungen bei der Arbeit lautlos bleiben?</summary><p>Ja. Nutze Vibration oder ein kurzes Bildschirmblinken statt Ton, damit ein Schreibtisch-Cue den Raum nicht stört.</p></details>
+  </section>
+  <section class="related">
+    <h2>Verwandte Ratgeber</h2>
+    <ul>
+      <li><a href="/cue-loop/de/guides/wear-os-reminder-app.html">Wear OS Erinnerung</a></li>
+      <li><a href="/cue-loop/de/guides/gentle-pomodoro-alternative.html">Sanfter Pomodoro</a></li>
+      <li><a href="/cue-loop/de/guides/adhd-reminder-app.html">ADHS Erinnerung</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>Bereit zum Ausprobieren?</h2>
+    <p>CueLoop ist kostenlos installierbar. Ein funktionierender Cue in Sekunden.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-de.svg" alt="Bei Google Play holen" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/de/privacy.html">Datenschutz</a>
+      <a href="mailto:northforceapps@protonmail.com">Kontakt</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>
