@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자세, 눈 휴식, 호흡 알림 — 10분마다 작은 리셋 — CueLoop</title>
+<meta name="description" content="CueLoop를 자세, 눈 휴식, 깊은 호흡을 위한 간단한 반복 알림으로 사용하세요. 화면 작업 중 몸과 집중을 작게 리셋하도록 10분 간격 신호를 설정할 수 있습니다. 연속 기록, 입력 기록, 큰 알람은 없습니다.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="자세 알림 앱, 눈 휴식 알림 앱, 호흡 알림 앱, 10분 알림 앱, 마이크로브레이크 앱, 화면 휴식 알림, 몸 리셋 알림">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/posture-eye-breathing-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ko">
+<meta property="og:title" content="자세, 눈 휴식, 호흡 알림 — 10분마다 작은 리셋">
+<meta property="og:description" content="CueLoop를 자세, 눈 휴식, 깊은 호흡을 위한 간단한 반복 알림으로 사용하세요. 화면 작업 중 몸과 집중을 작게 리셋하도록 10분 간격 신호를 설정할 수 있습니다. 연속 기록, 입력 기록, 큰 알람은 없습니다.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="자세, 눈 휴식, 호흡 알림 — 10분마다 작은 리셋">
+<meta name="twitter:description" content="CueLoop를 자세, 눈 휴식, 깊은 호흡을 위한 간단한 반복 알림으로 사용하세요. 화면 작업 중 몸과 집중을 작게 리셋하도록 10분 간격 신호를 설정할 수 있습니다. 연속 기록, 입력 기록, 큰 알람은 없습니다.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ko",
+  "headline": "자세, 눈 휴식, 호흡 알림 — 10분마다 작은 리셋",
+  "description": "CueLoop를 자세, 눈 휴식, 깊은 호흡을 위한 간단한 반복 알림으로 사용하세요. 화면 작업 중 몸과 집중을 작게 리셋하도록 10분 간격 신호를 설정할 수 있습니다. 연속 기록, 입력 기록, 큰 알람은 없습니다.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ko",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CueLoop가 10분마다 알려 줄 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. cue loop를 만들고 간격을 10분으로 설정한 뒤 활성 시간을 고르면 그 리듬으로 알려 줍니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "하나의 신호로 자세, 눈, 호흡을 함께 챙길 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 짧은 신호를 몸 리셋으로 사용할 수 있습니다. 허리를 세우고, 얼굴 힘을 빼고, 화면 밖을 보고, 깊게 두 번 숨 쉬는 식입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "알림을 조용하게 받을 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 소리가 방해될 때는 진동이나 화면 깜박임을 쓰면 됩니다. Wear OS 워치가 있으면 손목 진동으로도 받을 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "습관 추적 앱인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. CueLoop는 완료 체크나 연속 기록을 요구하지 않습니다. 이미 기억하고 싶은 행동을 반복 신호로 떠올리게 해 주는 앱입니다."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ko/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ko/#features">기능</a>
+      <a class="nav-sec" href="/cue-loop/ko/#how">작동 방식</a>
+      <a href="/cue-loop/ko/guides/">가이드</a>
+      <details class="lang"><summary><span class="flag">🇰🇷</span> <span class="lang-label">한국어</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/posture-eye-breathing-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/posture-eye-breathing-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/posture-eye-breathing-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/posture-eye-breathing-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/posture-eye-breathing-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/posture-eye-breathing-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html" hreflang="ko" lang="ko" aria-current="true">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ko/guides/">← 모든 가이드</a></p>
+  <h1>자세, 눈 휴식, 호흡 알림 — 10분마다 작은 리셋</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ko/scene-02-eye-break.jpg" alt="부드러운 알림 뒤 책상에서 눈을 쉬는 사람" loading="lazy">
+<p class="lede">유용한 행동 중에는 습관 추적 앱까지는 필요 없지만, 일하는 중에는 쉽게 잊히는 것들이 있습니다. <strong>자세, 눈 휴식, 호흡 알림</strong>은 작은 리셋으로 쓸 수 있습니다. 허리를 세우고, 얼굴 힘을 빼고, 화면 밖을 보고, 깊게 두 번 숨 쉬는 식입니다. <a href="/cue-loop/ko/">CueLoop</a>는 이런 반복 신호에 잘 맞습니다.</p>
+
+<h2>10분마다 하는 몸 리셋</h2>
+<p>화면 작업 중에는 10분마다 신호를 받는 설정이 실용적입니다.</p>
+<ul>
+  <li><strong>자세</strong> — 허리를 세우고 어깨를 내리고 턱 힘을 풉니다.</li>
+  <li><strong>눈</strong> — 눈을 조금 더 뜨고 깜박인 뒤 화면 밖을 봅니다.</li>
+  <li><strong>호흡</strong> — 다시 일하기 전에 천천히 두 번 숨 쉽니다.</li>
+</ul>
+
+<h2>CueLoop에서 설정하기</h2>
+<ol>
+  <li>“몸 리셋”, “자세”처럼 바로 이해되는 이름으로 cue loop를 만듭니다.</li>
+  <li>간격을 10분으로 설정합니다. 업무에 더 맞으면 20분이나 30분도 괜찮습니다.</li>
+  <li>책상에 있는 시간에만 작동하도록 활성 시간을 정합니다.</li>
+  <li>모드를 고릅니다. 조용한 진동, 휴대폰이 가까이 있을 때의 부드러운 소리, 무음으로 쓰는 화면 깜박임을 사용할 수 있습니다.</li>
+  <li>테스트한 뒤 loop를 시작합니다.</li>
+</ol>
+
+<h2>하나의 신호로 충분한 이유</h2>
+<p>무너진 자세, 눈의 피로, 얕은 호흡은 같이 오기 쉽습니다. 반복 신호를 “몸, 눈, 호흡”이라는 짧은 체크리스트로 만들면 여러 앱이나 입력 기록보다 유지하기 쉽습니다.</p>
+
+<h2>따로 나누면 좋은 경우</h2>
+<p>하나의 신호에 너무 많은 것을 넣게 된다면 나누세요. 눈 휴식은 20분마다, 자세는 30분마다, 호흡은 긴장되는 회의 전처럼 설정할 수 있습니다. CueLoop에서는 각 loop마다 다른 간격과 활성 시간을 둘 수 있습니다.</p>
+
+<p>휴대폰이 멀리 있다면 Wear OS 워치가 CueLoop 알림을 손목 진동으로 미러링할 수 있습니다. 자세한 내용은 <a href="/cue-loop/ko/guides/wear-os-reminder-app.html">Wear OS 알림 가이드</a>를 보세요. 책상 습관 전체를 다루려면 <a href="/cue-loop/ko/guides/desk-break-reminder-app.html">책상 휴식 알림 가이드</a>도 참고하세요.</p>
+
+  <section class="faq">
+    <h2>자주 묻는 질문</h2>
+    <details><summary>CueLoop가 10분마다 알려 줄 수 있나요?</summary><p>네. cue loop를 만들고 간격을 10분으로 설정한 뒤 활성 시간을 고르면 그 리듬으로 알려 줍니다.</p></details>
+    <details><summary>하나의 신호로 자세, 눈, 호흡을 함께 챙길 수 있나요?</summary><p>네. 짧은 신호를 몸 리셋으로 사용할 수 있습니다. 허리를 세우고, 얼굴 힘을 빼고, 화면 밖을 보고, 깊게 두 번 숨 쉬는 식입니다.</p></details>
+    <details><summary>알림을 조용하게 받을 수 있나요?</summary><p>네. 소리가 방해될 때는 진동이나 화면 깜박임을 쓰면 됩니다. Wear OS 워치가 있으면 손목 진동으로도 받을 수 있습니다.</p></details>
+    <details><summary>습관 추적 앱인가요?</summary><p>아니요. CueLoop는 완료 체크나 연속 기록을 요구하지 않습니다. 이미 기억하고 싶은 행동을 반복 신호로 떠올리게 해 주는 앱입니다.</p></details>
+  </section>
+  <section class="related">
+    <h2>관련 가이드</h2>
+    <ul>
+      <li><a href="/cue-loop/ko/guides/wear-os-reminder-app.html">Wear OS 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/desk-break-reminder-app.html">책상 휴식 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/gentle-pomodoro-alternative.html">부드러운 Pomodoro 대안</a></li>
+      <li><a href="/cue-loop/ko/guides/adhd-reminder-app.html">ADHD 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/memory-repetition-reminder-app.html">기억 반복 알림</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>한번 써볼까요?</h2>
+    <p>CueLoop는 무료로 설치할 수 있습니다. 몇 초 만에 알림을 시작하세요.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ko.svg" alt="Google Play에서 받기" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ko/privacy.html">개인정보 보호</a>
+      <a href="mailto:northforceapps@protonmail.com">문의</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

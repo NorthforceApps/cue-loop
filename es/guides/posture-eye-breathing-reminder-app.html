@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recordatorio de postura, vista y respiración — pequeños reinicios cada 10 minutos — CueLoop</title>
+<meta name="description" content="Usa CueLoop como recordatorio recurrente para postura, descansos visuales y respiración profunda. Configura un aviso de 10 minutos para pequeños reinicios de cuerpo y atención durante el trabajo con pantallas, sin rachas, registros ni alarmas estridentes.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/es/guides/posture-eye-breathing-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="app recordatorio postura, app descanso visual, app recordatorio respiración, recordatorio cada 10 minutos, app micro pausa, recordatorio descanso pantalla, recordatorio reinicio corporal">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/posture-eye-breathing-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="es">
+<meta property="og:title" content="Recordatorio de postura, vista y respiración — pequeños reinicios cada 10 minutos">
+<meta property="og:description" content="Usa CueLoop como recordatorio recurrente para postura, descansos visuales y respiración profunda. Configura un aviso de 10 minutos para pequeños reinicios de cuerpo y atención durante el trabajo con pantallas, sin rachas, registros ni alarmas estridentes.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/es/guides/posture-eye-breathing-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recordatorio de postura, vista y respiración — pequeños reinicios cada 10 minutos">
+<meta name="twitter:description" content="Usa CueLoop como recordatorio recurrente para postura, descansos visuales y respiración profunda. Configura un aviso de 10 minutos para pequeños reinicios de cuerpo y atención durante el trabajo con pantallas, sin rachas, registros ni alarmas estridentes.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "es",
+  "headline": "Recordatorio de postura, vista y respiración — pequeños reinicios cada 10 minutos",
+  "description": "Usa CueLoop como recordatorio recurrente para postura, descansos visuales y respiración profunda. Configura un aviso de 10 minutos para pequeños reinicios de cuerpo y atención durante el trabajo con pantallas, sin rachas, registros ni alarmas estridentes.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/es/guides/posture-eye-breathing-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿CueLoop puede recordarme cada 10 minutos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Crea un ciclo de aviso, pon el intervalo en 10 minutos, elige las horas activas y CueLoop te avisará con esa cadencia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Un solo aviso puede cubrir postura, vista y respiración?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Muchas personas usan un aviso breve como reinicio corporal: sentarse mejor, relajar la cara, mirar lejos de la pantalla y respirar hondo dos veces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El aviso puede ser silencioso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Usa vibración o destello de pantalla cuando el sonido molestaría. Con un reloj Wear OS, el aviso también puede llegar como vibración en la muñeca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esto es un rastreador de hábitos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CueLoop no te pide marcar tareas ni mantener rachas. Es una app de avisos recurrentes para acciones que ya sabes que quieres recordar."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/es/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/es/#features">Funciones</a>
+      <a class="nav-sec" href="/cue-loop/es/#how">Cómo funciona</a>
+      <a href="/cue-loop/es/guides/">Guías</a>
+      <details class="lang"><summary><span class="flag">🇪🇸</span> <span class="lang-label">Español</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/posture-eye-breathing-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/posture-eye-breathing-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/posture-eye-breathing-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/posture-eye-breathing-reminder-app.html" hreflang="es" lang="es" aria-current="true">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/posture-eye-breathing-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/posture-eye-breathing-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/es/guides/">← Todas las guías</a></p>
+  <h1>Recordatorio de postura, vista y respiración — pequeños reinicios cada 10 minutos</h1>
+  <img class="guide-hero" src="/cue-loop/assets/es/scene-02-eye-break.jpg" alt="Una persona en el escritorio descansa la vista después de un aviso suave" loading="lazy">
+<p class="lede">Muchas acciones útiles son demasiado pequeñas para un tracker completo, pero demasiado fáciles de olvidar mientras trabajas. Un <strong>recordatorio de postura, vista y respiración</strong> puede servir como reinicio breve: sentarte mejor, relajar la cara, mirar lejos de la pantalla y respirar hondo dos veces. <a href="/cue-loop/es/">CueLoop</a> está pensado para ese tipo de aviso recurrente.</p>
+
+<h2>Un reinicio corporal cada 10 minutos</h2>
+<p>Una configuración práctica es un aviso cada 10 minutos durante el trabajo con pantallas:</p>
+<ul>
+  <li><strong>Postura</strong> — enderezarte, bajar los hombros y soltar la mandíbula.</li>
+  <li><strong>Vista</strong> — abrir un poco más los ojos, parpadear y mirar lejos de la pantalla.</li>
+  <li><strong>Respiración</strong> — hacer dos respiraciones lentas antes de volver a la tarea.</li>
+</ul>
+
+<h2>Cómo configurarlo en CueLoop</h2>
+<ol>
+  <li>Crea un ciclo de aviso llamado “Reinicio corporal”, “Postura” o una frase clara para ti.</li>
+  <li>Pon el intervalo en 10 minutos, o usa 20-30 minutos si encaja mejor con tu trabajo.</li>
+  <li>Define horas activas para que los avisos solo funcionen mientras estás en el escritorio.</li>
+  <li>Elige el modo: vibración para un aviso privado, sonido suave si el teléfono está cerca, o destello si quieres silencio.</li>
+  <li>Prueba el aviso y empieza el ciclo.</li>
+</ol>
+
+<h2>Por qué un solo aviso puede cubrir varias cosas</h2>
+<p>La mala postura, la fatiga visual y la respiración superficial suelen aparecer juntas. Un aviso recurrente puede convertirse en una lista mental corta: cuerpo, vista, respiración. Es más fácil de mantener que tres apps o un tracker que te pide registrar cada reinicio.</p>
+
+<h2>Cuándo separar los ciclos</h2>
+<p>Si un aviso intenta cubrir demasiado, sepáralo. Por ejemplo: descanso visual cada 20 minutos, postura cada 30 minutos y respiración antes de reuniones tensas. En CueLoop, cada ciclo tiene su propia cadencia y sus propias horas activas.</p>
+
+<p>Si el teléfono está lejos, un reloj Wear OS puede reflejar la notificación de CueLoop como vibración en la muñeca. Consulta la <a href="/cue-loop/es/guides/wear-os-reminder-app.html">guía de recordatorios Wear OS</a>. Para una rutina de escritorio más amplia, lee la <a href="/cue-loop/es/guides/desk-break-reminder-app.html">guía de pausas de escritorio</a>.</p>
+
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿CueLoop puede recordarme cada 10 minutos?</summary><p>Sí. Crea un ciclo de aviso, pon el intervalo en 10 minutos, elige las horas activas y CueLoop te avisará con esa cadencia.</p></details>
+    <details><summary>¿Un solo aviso puede cubrir postura, vista y respiración?</summary><p>Sí. Muchas personas usan un aviso breve como reinicio corporal: sentarse mejor, relajar la cara, mirar lejos de la pantalla y respirar hondo dos veces.</p></details>
+    <details><summary>¿El aviso puede ser silencioso?</summary><p>Sí. Usa vibración o destello de pantalla cuando el sonido molestaría. Con un reloj Wear OS, el aviso también puede llegar como vibración en la muñeca.</p></details>
+    <details><summary>¿Esto es un rastreador de hábitos?</summary><p>No. CueLoop no te pide marcar tareas ni mantener rachas. Es una app de avisos recurrentes para acciones que ya sabes que quieres recordar.</p></details>
+  </section>
+  <section class="related">
+    <h2>Guías relacionadas</h2>
+    <ul>
+      <li><a href="/cue-loop/es/guides/wear-os-reminder-app.html">App de recordatorios Wear OS</a></li>
+      <li><a href="/cue-loop/es/guides/desk-break-reminder-app.html">App de pausas de escritorio</a></li>
+      <li><a href="/cue-loop/es/guides/gentle-pomodoro-alternative.html">Alternativa suave a Pomodoro</a></li>
+      <li><a href="/cue-loop/es/guides/adhd-reminder-app.html">App de recordatorios TDAH</a></li>
+      <li><a href="/cue-loop/es/guides/memory-repetition-reminder-app.html">Recordatorio de repetición para la memoria</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>¿Listo para probarlo?</h2>
+    <p>CueLoop se instala gratis. Un aviso listo en segundos.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-es.svg" alt="Consíguelo en Google Play" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/es/privacy.html">Privacidad</a>
+      <a href="mailto:northforceapps@protonmail.com">Contacto</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

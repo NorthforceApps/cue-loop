@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recordatorio de repetición para la memoria — avisos temporizados para practicar recuerdo — CueLoop</title>
+<meta name="description" content="¿Quieres reforzar la memoria con sesiones breves de recuerdo? CueLoop puede dar avisos de repetición cada 30 minutos o con tu propia cadencia, para que recuerdes repasar un dato, frase, nombre o idea durante el día.">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/es/guides/memory-repetition-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="app recordatorio memoria, recordatorio repetición espaciada, app memorización, app recordatorio estudio, repetir información cada 30 minutos, recordatorio práctica de recuerdo, app repetición temporizada">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/memory-repetition-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="es">
+<meta property="og:title" content="Recordatorio de repetición para la memoria — avisos temporizados para practicar recuerdo">
+<meta property="og:description" content="¿Quieres reforzar la memoria con sesiones breves de recuerdo? CueLoop puede dar avisos de repetición cada 30 minutos o con tu propia cadencia, para que recuerdes repasar un dato, frase, nombre o idea durante el día.">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/es/guides/memory-repetition-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recordatorio de repetición para la memoria — avisos temporizados para practicar recuerdo">
+<meta name="twitter:description" content="¿Quieres reforzar la memoria con sesiones breves de recuerdo? CueLoop puede dar avisos de repetición cada 30 minutos o con tu propia cadencia, para que recuerdes repasar un dato, frase, nombre o idea durante el día.">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "es",
+  "headline": "Recordatorio de repetición para la memoria — avisos temporizados para practicar recuerdo",
+  "description": "¿Quieres reforzar la memoria con sesiones breves de recuerdo? CueLoop puede dar avisos de repetición cada 30 minutos o con tu propia cadencia, para que recuerdes repasar un dato, frase, nombre o idea durante el día.",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/es/guides/memory-repetition-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿CueLoop es una app de tarjetas como Anki?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CueLoop no gestiona mazos, notas ni algoritmos de repetición espaciada. Da avisos temporizados para que recuerdes hacer una práctica breve de recuerdo con el material que elijas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo poner un aviso cada 30 minutos para memorizar algo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Configura un ciclo de aviso de 30 minutos, elige horas activas y usa cada aviso como señal para recordar un dato, frase, nombre o idea."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo usar intervalos cada vez más largos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CueLoop funciona mejor para repetición simple basada en tiempo. Puedes crear varios ciclos o ajustar el intervalo manualmente si luego quieres separar más las prácticas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Funciona sin conexión?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. CueLoop funciona primero sin conexión y no requiere cuenta para los recordatorios."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/es/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/es/#features">Funciones</a>
+      <a class="nav-sec" href="/cue-loop/es/#how">Cómo funciona</a>
+      <a href="/cue-loop/es/guides/">Guías</a>
+      <details class="lang"><summary><span class="flag">🇪🇸</span> <span class="lang-label">Español</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/memory-repetition-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/memory-repetition-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/memory-repetition-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/memory-repetition-reminder-app.html" hreflang="es" lang="es" aria-current="true">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/memory-repetition-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/memory-repetition-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/memory-repetition-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/es/guides/">← Todas las guías</a></p>
+  <h1>Recordatorio de repetición para la memoria — avisos temporizados para practicar recuerdo</h1>
+  <img class="guide-hero" src="/cue-loop/assets/es/scene-06-focus-sprint.jpg" alt="Un aviso tranquilo de concentración para una revisión breve de memoria" loading="lazy">
+<p class="lede">La memoria mejora cuando recuperas la información varias veces, pero lo difícil suele ser acordarte de practicar. Un <strong>recordatorio de repetición para la memoria</strong> puede darte avisos temporizados para recordar un dato, frase, nombre o idea durante el día. <a href="/cue-loop/es/">CueLoop</a> no es un sistema de tarjetas; es la señal que inicia el repaso.</p>
+
+<h2>Usa avisos para prácticas breves de recuerdo</h2>
+<p>Una rutina sencilla basta:</p>
+<ol>
+  <li>Elige algo pequeño: una definición, palabra, fórmula, nombre, frase o paso de trabajo.</li>
+  <li>Configura un aviso de CueLoop cada 30 minutos dentro de tus horas activas.</li>
+  <li>Cuando llegue el aviso, intenta recordarlo antes de mirarlo.</li>
+  <li>Si ya sale fácil, alarga el intervalo más tarde o cambia a otro contenido.</li>
+</ol>
+
+<h2>Diferente de las apps de repetición espaciada</h2>
+<p>Apps como Anki y SuperMemo gestionan tarjetas, puntuaciones y horarios adaptativos. CueLoop hace algo más simple: avisa según una cadencia de tiempo. Puede servir cuando no quieres crear un mazo o cuando el repaso forma parte de tu día, no de una sesión de estudio.</p>
+
+<h2>Buenos usos</h2>
+<ul>
+  <li>Repasar una frase en otro idioma.</li>
+  <li>Recordar el nombre de una persona después de una reunión.</li>
+  <li>Practicar una definición, comando, fórmula o instrucción breve.</li>
+  <li>Repetir el siguiente paso de un flujo hasta que se vuelva automático.</li>
+</ul>
+
+<h2>Mantén el aviso pequeño</h2>
+<p>El aviso debe disparar una acción mínima, no una sesión completa de estudio. Si pide demasiado, acabarás ignorándolo. Un intento de recuerdo de 10 segundos suele bastar: pausa, recupera, comprueba y sigue.</p>
+
+<p>CueLoop funciona sin conexión, no requiere cuenta y puede avisar con vibración, sonido o destello de pantalla. Con un reloj Wear OS, el aviso también llega a la muñeca. Para otros ritmos, mira la <a href="/cue-loop/es/guides/gentle-pomodoro-alternative.html">alternativa suave a Pomodoro</a> y la <a href="/cue-loop/es/guides/adhd-reminder-app.html">guía de recordatorios TDAH</a>.</p>
+
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿CueLoop es una app de tarjetas como Anki?</summary><p>No. CueLoop no gestiona mazos, notas ni algoritmos de repetición espaciada. Da avisos temporizados para que recuerdes hacer una práctica breve de recuerdo con el material que elijas.</p></details>
+    <details><summary>¿Puedo poner un aviso cada 30 minutos para memorizar algo?</summary><p>Sí. Configura un ciclo de aviso de 30 minutos, elige horas activas y usa cada aviso como señal para recordar un dato, frase, nombre o idea.</p></details>
+    <details><summary>¿Puedo usar intervalos cada vez más largos?</summary><p>CueLoop funciona mejor para repetición simple basada en tiempo. Puedes crear varios ciclos o ajustar el intervalo manualmente si luego quieres separar más las prácticas.</p></details>
+    <details><summary>¿Funciona sin conexión?</summary><p>Sí. CueLoop funciona primero sin conexión y no requiere cuenta para los recordatorios.</p></details>
+  </section>
+  <section class="related">
+    <h2>Guías relacionadas</h2>
+    <ul>
+      <li><a href="/cue-loop/es/guides/wear-os-reminder-app.html">App de recordatorios Wear OS</a></li>
+      <li><a href="/cue-loop/es/guides/desk-break-reminder-app.html">App de pausas de escritorio</a></li>
+      <li><a href="/cue-loop/es/guides/gentle-pomodoro-alternative.html">Alternativa suave a Pomodoro</a></li>
+      <li><a href="/cue-loop/es/guides/adhd-reminder-app.html">App de recordatorios TDAH</a></li>
+      <li><a href="/cue-loop/es/guides/posture-eye-breathing-reminder-app.html">Recordatorio de postura, vista y respiración</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>¿Listo para probarlo?</h2>
+    <p>CueLoop se instala gratis. Un aviso listo en segundos.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-es.svg" alt="Consíguelo en Google Play" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/es/privacy.html">Privacidad</a>
+      <a href="mailto:northforceapps@protonmail.com">Contacto</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>記憶のための繰り返しリマインダー — 思い出す練習の時間合図 — CueLoop</title>
+<meta name="description" content="短い想起練習で記憶を強めたい時に。CueLoopは30分ごと、または自分のリズムで繰り返しの合図を出し、事実、フレーズ、名前、アイデアを日中に思い出すきっかけを作ります。">
+<link rel="canonical" href="https://northforceapps.github.io/cue-loop/ja/guides/memory-repetition-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="記憶 リマインダー アプリ, spaced repetition リマインダー, 暗記 リマインダー, 勉強 リマインダー アプリ, 30分ごと 繰り返し, 想起練習 リマインダー, 時間ベース 反復">
+<link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.github.io/cue-loop/de/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.github.io/cue-loop/fr/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.github.io/cue-loop/es/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.github.io/cue-loop/pt-br/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.github.io/cue-loop/ja/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/memory-repetition-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/memory-repetition-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="記憶のための繰り返しリマインダー — 思い出す練習の時間合図">
+<meta property="og:description" content="短い想起練習で記憶を強めたい時に。CueLoopは30分ごと、または自分のリズムで繰り返しの合図を出し、事実、フレーズ、名前、アイデアを日中に思い出すきっかけを作ります。">
+<meta property="og:url" content="https://northforceapps.github.io/cue-loop/ja/guides/memory-repetition-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="記憶のための繰り返しリマインダー — 思い出す練習の時間合図">
+<meta name="twitter:description" content="短い想起練習で記憶を強めたい時に。CueLoopは30分ごと、または自分のリズムで繰り返しの合図を出し、事実、フレーズ、名前、アイデアを日中に思い出すきっかけを作ります。">
+<meta name="twitter:image" content="https://northforceapps.github.io/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ja",
+  "headline": "記憶のための繰り返しリマインダー — 思い出す練習の時間合図",
+  "description": "短い想起練習で記憶を強めたい時に。CueLoopは30分ごと、または自分のリズムで繰り返しの合図を出し、事実、フレーズ、名前、アイデアを日中に思い出すきっかけを作ります。",
+  "mainEntityOfPage": "https://northforceapps.github.io/cue-loop/ja/guides/memory-repetition-reminder-app.html",
+  "image": "https://northforceapps.github.io/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CueLoopはAnkiのような単語カードアプリですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。CueLoopはデッキ、採点、間隔反復アルゴリズムを管理しません。選んだ内容を短く思い出す練習のきっかけとして、時間ベースの合図を出します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "30分ごとに暗記のリマインダーを設定できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。cue loopを30分に設定し、有効時間を選ぶと、各合図を事実、フレーズ、名前、アイデアを思い出すきっかけにできます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "間隔をだんだん長くできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CueLoopはシンプルな時間ベースの繰り返しに向いています。後で間隔を広げたい時は、複数のcue loopを作るか、手動で間隔を変更できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "オフラインで使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。CueLoopはオフライン優先で、リマインダーにアカウントは不要です。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ja/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ja/#features">機能</a>
+      <a class="nav-sec" href="/cue-loop/ja/#how">使い方</a>
+      <a href="/cue-loop/ja/guides/">ガイド</a>
+      <details class="lang"><summary><span class="flag">🇯🇵</span> <span class="lang-label">日本語</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/memory-repetition-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/memory-repetition-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/memory-repetition-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/memory-repetition-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/memory-repetition-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/memory-repetition-reminder-app.html" hreflang="ja" lang="ja" aria-current="true">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/memory-repetition-reminder-app.html" hreflang="ko" lang="ko">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ja/guides/">← すべてのガイド</a></p>
+  <h1>記憶のための繰り返しリマインダー — 思い出す練習の時間合図</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ja/scene-06-focus-sprint.jpg" alt="短い記憶レビューのための落ち着いた集中合図" loading="lazy">
+<p class="lede">記憶は、情報を何度も思い出すことで強くなります。ただ、練習すること自体を忘れがちです。<strong>記憶のための繰り返しリマインダー</strong>は、日中に事実、フレーズ、名前、アイデアを思い出すための時間合図になります。<a href="/cue-loop/ja/">CueLoop</a>は単語カードアプリではありません。復習を始める合図を出すアプリです。</p>
+
+<h2>短い想起練習に時間合図を使う</h2>
+<p>シンプルな流れで十分です。</p>
+<ol>
+  <li>覚えたい小さなものを1つ選びます。定義、単語、公式、名前、文章、作業手順など。</li>
+  <li>有効時間内に30分ごとのCueLoopリマインダーを設定します。</li>
+  <li>合図が来たら、見る前に思い出してみます。</li>
+  <li>簡単になったら、後で間隔を長くするか、別の内容に移ります。</li>
+</ol>
+
+<h2>間隔反復アプリとの違い</h2>
+<p>AnkiやSuperMemoのようなアプリは、カード、採点、適応的な復習スケジュールを管理します。CueLoopはもっと単純で、決めた時間のリズムで知らせます。カードを作りたくない時や、勉強時間ではなく日常の中で復習したい時に使いやすい方法です。</p>
+
+<h2>使いやすい例</h2>
+<ul>
+  <li>新しい言語の一文を復習する。</li>
+  <li>会議後に相手の名前を覚える。</li>
+  <li>短い定義、コマンド、公式、指示を練習する。</li>
+  <li>次の作業手順を、自動でできるまで繰り返す。</li>
+</ul>
+
+<h2>合図は小さくする</h2>
+<p>リマインダーは大きな勉強時間ではなく、ごく小さな行動を始めるためのものです。要求が大きすぎると、無視しやすくなります。10秒の想起でも十分なことがあります。止まる、思い出す、確認する、続ける。</p>
+
+<p>CueLoopはオフラインで動き、アカウントは不要です。バイブ、音、画面フラッシュで知らせられます。Wear OSウォッチがあれば、手首にも合図が届きます。他の時間リズムには、<a href="/cue-loop/ja/guides/gentle-pomodoro-alternative.html">やさしいPomodoro代替</a>と<a href="/cue-loop/ja/guides/adhd-reminder-app.html">ADHDリマインダーガイド</a>もあります。</p>
+
+  <section class="faq">
+    <h2>よくある質問</h2>
+    <details><summary>CueLoopはAnkiのような単語カードアプリですか？</summary><p>いいえ。CueLoopはデッキ、採点、間隔反復アルゴリズムを管理しません。選んだ内容を短く思い出す練習のきっかけとして、時間ベースの合図を出します。</p></details>
+    <details><summary>30分ごとに暗記のリマインダーを設定できますか？</summary><p>はい。cue loopを30分に設定し、有効時間を選ぶと、各合図を事実、フレーズ、名前、アイデアを思い出すきっかけにできます。</p></details>
+    <details><summary>間隔をだんだん長くできますか？</summary><p>CueLoopはシンプルな時間ベースの繰り返しに向いています。後で間隔を広げたい時は、複数のcue loopを作るか、手動で間隔を変更できます。</p></details>
+    <details><summary>オフラインで使えますか？</summary><p>はい。CueLoopはオフライン優先で、リマインダーにアカウントは不要です。</p></details>
+  </section>
+  <section class="related">
+    <h2>関連ガイド</h2>
+    <ul>
+      <li><a href="/cue-loop/ja/guides/wear-os-reminder-app.html">Wear OSリマインダーアプリ</a></li>
+      <li><a href="/cue-loop/ja/guides/desk-break-reminder-app.html">デスク休憩リマインダー</a></li>
+      <li><a href="/cue-loop/ja/guides/gentle-pomodoro-alternative.html">やさしいPomodoro代替</a></li>
+      <li><a href="/cue-loop/ja/guides/adhd-reminder-app.html">ADHDリマインダーアプリ</a></li>
+      <li><a href="/cue-loop/ja/guides/posture-eye-breathing-reminder-app.html">姿勢・目の休憩・呼吸リマインダー</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>試してみますか？</h2>
+    <p>CueLoopは無料でインストールできます。数秒で合図を開始できます。</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener"><img src="/cue-loop/assets/badge-ja.svg" alt="Google Playで入手" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ja/privacy.html">プライバシー</a>
+      <a href="mailto:northforceapps@protonmail.com">お問い合わせ</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>
