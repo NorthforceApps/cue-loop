@@ -882,4 +882,12 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://northforceapps.github.io/cue-loop/ko/guides/memory-repetition-reminder-app.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/memory-repetition-reminder-app.html"/>
   </url>
+  <url>
+    <loc>https://northforceapps.github.io/cue-loop/guides/silent-screen-flash-reminder-app.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://northforceapps.github.io/cue-loop/guides/silent-screen-flash-reminder-app.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://northforceapps.github.io/cue-loop/guides/silent-screen-flash-reminder-app.html"/>
+  </url>
 </urlset>
