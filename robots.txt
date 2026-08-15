@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://northforceapps.github.io/cue-loop/sitemap.xml
+Sitemap: https://northforceapps.com/cue-loop/sitemap.xml

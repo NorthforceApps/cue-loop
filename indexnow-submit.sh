@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-HOST="northforceapps.github.io"
+HOST="northforceapps.com"
 KEY="b890eaf9ad865e7d91acc69b5084c3f6"
 KEY_LOCATION="https://${HOST}/cue-loop/${KEY}.txt"
 
