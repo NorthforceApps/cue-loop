@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7WZWQ9PQ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y7WZWQ9PQ7');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>운동 스낵 알림 앱 — 하루 중 짧게 나누어 하는 마이크로 운동 — CueLoop</title>
+<meta name="description" content="CueLoop을 운동 스낵 알림으로 사용하세요. 30~60분마다 부드러운 신호로 스쿼트, 계단, 벽 푸시업, 스트레칭을 하고, 알림에 동작을 적어 두고, 완료 / 하지 않음으로 실제로 한 것을 확인합니다. 계정도, 연속 기록도 없습니다.">
+<link rel="canonical" href="https://northforceapps.com/cue-loop/ko/guides/exercise-snack-reminder-app.html">
+<meta name="theme-color" content="#0e8f72">
+<meta name="keywords" content="운동 스낵, 엑서사이즈 스낵, 운동 스낵 앱, 마이크로 운동, 운동 알림 앱, 스트레칭 알림 앱, 오래 앉아 있기 알림, 짧은 운동 알림">
+<link rel="alternate" hreflang="en" href="https://northforceapps.com/cue-loop/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="de" href="https://northforceapps.com/cue-loop/de/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="fr" href="https://northforceapps.com/cue-loop/fr/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="es" href="https://northforceapps.com/cue-loop/es/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="pt-BR" href="https://northforceapps.com/cue-loop/pt-br/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="ja" href="https://northforceapps.com/cue-loop/ja/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="ko" href="https://northforceapps.com/cue-loop/ko/guides/exercise-snack-reminder-app.html">
+<link rel="alternate" hreflang="x-default" href="https://northforceapps.com/cue-loop/guides/exercise-snack-reminder-app.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CueLoop">
+<meta property="og:locale" content="ko">
+<meta property="og:title" content="운동 스낵 알림 앱 — 하루 중 짧게 나누어 하는 마이크로 운동">
+<meta property="og:description" content="CueLoop을 운동 스낵 알림으로 사용하세요. 30~60분마다 부드러운 신호로 스쿼트, 계단, 벽 푸시업, 스트레칭을 하고, 알림에 동작을 적어 두고, 완료 / 하지 않음으로 실제로 한 것을 확인합니다. 계정도, 연속 기록도 없습니다.">
+<meta property="og:url" content="https://northforceapps.com/cue-loop/ko/guides/exercise-snack-reminder-app.html">
+<meta property="og:image" content="https://northforceapps.com/cue-loop/assets/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="운동 스낵 알림 앱 — 하루 중 짧게 나누어 하는 마이크로 운동">
+<meta name="twitter:description" content="CueLoop을 운동 스낵 알림으로 사용하세요. 30~60분마다 부드러운 신호로 스쿼트, 계단, 벽 푸시업, 스트레칭을 하고, 알림에 동작을 적어 두고, 완료 / 하지 않음으로 실제로 한 것을 확인합니다. 계정도, 연속 기록도 없습니다.">
+<meta name="twitter:image" content="https://northforceapps.com/cue-loop/assets/feature_graphic.png">
+<link rel="icon" href="/cue-loop/assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/cue-loop/assets/icon.png">
+<link rel="manifest" href="/cue-loop/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cue-loop/styles.css">
+<style>.doc{max-width:780px;margin:0 auto;padding:40px 24px 80px}
+  .doc h1{font-family:var(--serif);font-size:2.4rem;color:var(--teal-deep);margin-bottom:6px}
+  .doc h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin:30px 0 8px}
+  .doc p,.doc li{color:var(--ink-soft);margin:8px 0}
+  .doc ul{margin-left:20px}
+  .doc .eff{color:var(--stone);font-size:.95rem}
+  .doc .lede{margin-top:18px}
+  .doc .cta-card{margin-top:36px;padding:22px;border-radius:18px;background:var(--paper);border:1px solid rgba(10,18,33,.08)}
+  .guide-hero{width:100%;height:auto;border-radius:18px;margin:18px 0 8px;display:block}
+  .doc h3{font-family:var(--serif);font-size:1.15rem;color:var(--teal-deep);margin:22px 0 6px}
+  .doc ol,.doc ul{margin-left:20px}
+  .doc ol li,.doc ul li{margin:6px 0}
+  .doc .faq{margin-top:34px}
+  .doc .faq h2{margin-bottom:12px}
+  .doc .faq details{background:var(--paper);border:1px solid rgba(10,18,33,.08);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+  .doc .faq summary{font-weight:700;color:var(--ink);cursor:pointer;font-size:1.05rem;list-style:none}
+  .doc .faq summary::-webkit-details-marker{display:none}
+  .doc .faq details p{margin-top:10px;color:var(--ink-soft)}
+  .doc .related{margin-top:34px}
+  .doc .related ul{list-style:none;margin-left:0}
+  .doc .related li{margin:8px 0}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "inLanguage": "ko",
+  "headline": "운동 스낵 알림 앱 — 하루 중 짧게 나누어 하는 마이크로 운동",
+  "description": "CueLoop을 운동 스낵 알림으로 사용하세요. 30~60분마다 부드러운 신호로 스쿼트, 계단, 벽 푸시업, 스트레칭을 하고, 알림에 동작을 적어 두고, 완료 / 하지 않음으로 실제로 한 것을 확인합니다. 계정도, 연속 기록도 없습니다.",
+  "mainEntityOfPage": "https://northforceapps.com/cue-loop/ko/guides/exercise-snack-reminder-app.html",
+  "image": "https://northforceapps.com/cue-loop/assets/feature_graphic.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Northforce Apps"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ko",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "운동 스낵이란 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "스쿼트, 계단, 벽 푸시업, 스트레칭 같은 1~2분짜리 짧은 움직임을 한 번의 운동이 아니라 하루 동안 나누어 하는 방법입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "알림은 얼마나 자주 오면 좋을까요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "근무 시간에는 30~60분마다로 설정하는 사람이 많습니다. 실제로 따를 수 있는 간격을 고르세요. 언제든 바꿀 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "어떤 스낵을 했는지 볼 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 알림 설정에서 습관 돌아보기를 켜고 알림에서 완료 또는 하지 않음을 누르세요. 돌아보기 화면에서 하루와 한 주를 볼 수 있고, 기록은 휴대폰에만 저장됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CueLoop은 운동 앱인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. 운동 라이브러리나 트레이닝 계획은 없습니다. 제때 오는 신호를 주고, 동작은 직접 고릅니다."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/cue-loop/ko/"><img src="/cue-loop/assets/icon.png" alt="CueLoop icon">CueLoop</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-sec" href="/cue-loop/ko/#features">기능</a>
+      <a class="nav-sec" href="/cue-loop/ko/#how">작동 방식</a>
+      <a href="/cue-loop/ko/guides/">가이드</a>
+      <details class="lang"><summary><span class="flag">🇰🇷</span> <span class="lang-label">한국어</span> <span class="chev" aria-hidden="true">▾</span></summary><div class="lang-menu"><a href="/cue-loop/guides/exercise-snack-reminder-app.html" hreflang="en" lang="en">🇬🇧 English</a><a href="/cue-loop/de/guides/exercise-snack-reminder-app.html" hreflang="de" lang="de">🇩🇪 Deutsch</a><a href="/cue-loop/fr/guides/exercise-snack-reminder-app.html" hreflang="fr" lang="fr">🇫🇷 Français</a><a href="/cue-loop/es/guides/exercise-snack-reminder-app.html" hreflang="es" lang="es">🇪🇸 Español</a><a href="/cue-loop/pt-br/guides/exercise-snack-reminder-app.html" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a><a href="/cue-loop/ja/guides/exercise-snack-reminder-app.html" hreflang="ja" lang="ja">🇯🇵 日本語</a><a href="/cue-loop/ko/guides/exercise-snack-reminder-app.html" hreflang="ko" lang="ko" aria-current="true">🇰🇷 한국어</a></div></details>
+    </nav>
+  </div>
+</header>
+<main class="doc">
+  <p class="eff"><a href="/cue-loop/ko/guides/">← 모든 가이드</a></p>
+  <h1>운동 스낵 알림 앱 — 하루 중 짧게 나누어 하는 마이크로 운동</h1>
+  <img class="guide-hero" src="/cue-loop/assets/ko/scene-03-stretch.jpg" alt="부드러운 신호 뒤에 일어나 스트레칭하는 사람" loading="lazy">
+<p class="lede"><strong>운동 스낵</strong>(엑서사이즈 스낵)은 스쿼트, 계단 오르기, 스트레칭 같은 1~2분짜리 짧은 움직임을 한 번의 운동으로 몰아서 하지 않고 하루 동안 나누어 하는 방법입니다. 동작은 쉽고, 어려운 건 기억하는 일입니다. <strong>운동 스낵 알림 앱</strong>이 바로 그 부분을 맡아 줍니다. <a href="/cue-loop/ko/">CueLoop</a>이 정한 간격에 맞춰 부드러운 신호를 보내고, 동작은 직접 고르면 됩니다.</p>
+
+<h2>어떤 것이 운동 스낵일까요?</h2>
+<p>옷을 갈아입지 않고 그 자리에서 할 수 있을 만큼 짧으면 무엇이든 좋습니다.</p>
+<ul>
+  <li><strong>스쿼트 10회</strong> 또는 의자에서 앉았다 일어서기.</li>
+  <li>물이 끓는 동안 <strong>까치발 들기</strong>.</li>
+  <li>벽, 책상, 주방 조리대를 짚고 하는 <strong>푸시업</strong>.</li>
+  <li><strong>계단 한 층</strong> 또는 2분 빠르게 걷기.</li>
+  <li>오래 앉아 있은 뒤 <strong>목과 어깨 돌리기</strong>나 선 채로 스트레칭.</li>
+</ul>
+
+<h2>스낵마다 신호 만들기</h2>
+<ol>
+  <li>알림을 추가하고 “스쿼트”, “계단”처럼 동작 이름을 붙입니다.</li>
+  <li><strong>메시지(선택사항)</strong>에 “스쿼트 10회, 천천히 내려가기”처럼 정확한 동작을 적으면 알림과 함께 알림 패널에 표시됩니다.</li>
+  <li>간격을 정합니다. 사무실에서 보내는 날에는 30~60분마다가 적당합니다.</li>
+  <li>활성 시간과 요일을 정하면 저녁과 주말에는 알림을 멈출 수 있습니다.</li>
+  <li>모드를 고릅니다. 사무실에서는 진동이나 화면 깜박임으로 조용히, 집에서는 부드러운 소리도 좋습니다.</li>
+  <li>테스트 버튼(예: “진동 테스트”)으로 확인한 뒤 시작합니다.</li>
+</ol>
+
+<h2>하루 예시</h2>
+<ul>
+  <li><strong>9:00~17:00, 45분마다</strong> — 스쿼트 10회.</li>
+  <li><strong>60분마다</strong> — 계단 한 층 또는 짧은 걷기.</li>
+  <li><strong>30분마다</strong> — 목과 어깨 돌리기.</li>
+</ul>
+<p>무료 플랜에서는 한 번에 알림 하나가 동작하지만 시작하기에는 충분합니다. “운동 스낵” 알림 하나를 두고 매주 메시지만 바꿔 보세요 — 스쿼트 주간, 푸시업 주간, 계단 주간. 여러 알림을 동시에 쓰려면 주간 무료 이용일이나 CueLoop Pro를 이용하세요.</p>
+
+<h2>실제로 한 스낵 확인하기</h2>
+<p>알림 설정에서 <strong>습관 돌아보기</strong>를 켜면, 알림이 울릴 때마다 알림에서 바로 <strong>완료</strong> 또는 <strong>하지 않음</strong>을 누를 수 있습니다. 돌아보기 화면(홈 화면의 달력 아이콘)에서 하루와 한 주를 한눈에 볼 수 있습니다. 끊길 연속 기록도, 계정도 없이 기록은 휴대폰에만 남습니다.</p>
+
+<h2>할 수 있을 만큼 작게</h2>
+<p>스낵은 신호가 왔을 때 실제로 움직여야 의미가 있습니다. 자꾸 건너뛰게 된다면 더 무리하기보다 동작을 줄이거나 간격을 늘려 보세요. 부상이나 건강 문제가 있다면 새로운 운동을 시작하기 전에 전문가와 상담하세요.</p>
+
+<h2>운동 계획이 아닌 알림</h2>
+<p>CueLoop에는 운동 라이브러리나 트레이닝 프로그램이 없습니다. 휴대폰과, 사용한다면 Wear OS 워치로 전해지는 믿을 수 있고 제때 오는 신호입니다. 나에게 맞는 동작과 함께 사용하세요.</p>
+
+<p>오래 앉아 있는 습관에 관해서는 <a href="/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html">자세·눈 휴식·호흡 가이드</a>와 <a href="/cue-loop/ko/guides/desk-break-reminder-app.html">책상 휴식 알림 가이드</a>도 참고하세요.</p>
+
+  <section class="faq">
+    <h2>자주 묻는 질문</h2>
+    <details><summary>운동 스낵이란 무엇인가요?</summary><p>스쿼트, 계단, 벽 푸시업, 스트레칭 같은 1~2분짜리 짧은 움직임을 한 번의 운동이 아니라 하루 동안 나누어 하는 방법입니다.</p></details>
+    <details><summary>알림은 얼마나 자주 오면 좋을까요?</summary><p>근무 시간에는 30~60분마다로 설정하는 사람이 많습니다. 실제로 따를 수 있는 간격을 고르세요. 언제든 바꿀 수 있습니다.</p></details>
+    <details><summary>어떤 스낵을 했는지 볼 수 있나요?</summary><p>네. 알림 설정에서 습관 돌아보기를 켜고 알림에서 완료 또는 하지 않음을 누르세요. 돌아보기 화면에서 하루와 한 주를 볼 수 있고, 기록은 휴대폰에만 저장됩니다.</p></details>
+    <details><summary>CueLoop은 운동 앱인가요?</summary><p>아니요. 운동 라이브러리나 트레이닝 계획은 없습니다. 제때 오는 신호를 주고, 동작은 직접 고릅니다.</p></details>
+  </section>
+  <section class="related">
+    <h2>관련 가이드</h2>
+    <ul>
+      <li><a href="/cue-loop/ko/guides/wear-os-reminder-app.html">Wear OS 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/desk-break-reminder-app.html">책상 휴식 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/gentle-pomodoro-alternative.html">부드러운 Pomodoro 대안</a></li>
+      <li><a href="/cue-loop/ko/guides/adhd-reminder-app.html">ADHD 알림 앱</a></li>
+      <li><a href="/cue-loop/ko/guides/posture-eye-breathing-reminder-app.html">자세, 눈 휴식, 호흡 알림</a></li>
+      <li><a href="/cue-loop/ko/guides/memory-repetition-reminder-app.html">기억 반복 알림</a></li>
+    </ul>
+  </section>
+  <div class="cta-card">
+    <h2>한번 써볼까요?</h2>
+    <p>CueLoop는 무료로 설치할 수 있습니다. 몇 초 만에 알림을 시작하세요.</p>
+    <p><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.cueloop.app&amp;referrer=utm_source%3Dcueloop_site%26utm_medium%3Dorganic%26utm_campaign%3Dguide_exercise_snack_reminder_app%26utm_content%3Dko" rel="noopener"><img src="/cue-loop/assets/badge-ko.svg" alt="Google Play에서 받기" width="186" height="55" loading="lazy"></a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> CueLoop · Northforce Apps</div>
+    <nav aria-label="Footer">
+      <a href="/cue-loop/ko/privacy.html">개인정보 보호</a>
+      <a href="mailto:northforceapps@protonmail.com">문의</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cueloop.app&amp;referrer=utm_source%3Dcueloop_site%26utm_medium%3Dorganic%26utm_campaign%3Dguide_exercise_snack_reminder_app%26utm_content%3Dko" rel="noopener">Google Play</a>
+    </nav>
+  </div>
+  <div class="wrap foot-more">
+    <span class="foot-more-label">More from Northforce Apps</span>
+    <nav aria-label="Other Northforce Apps"><a href="https://northforceapps.com/gpslogger/">GPS Logger</a><a href="https://northforceapps.com/remotemic/">RemoteMic</a><a href="https://northforceapps.com/webcam/">WebCam</a></nav>
+  </div>
+</footer>
+<script src="/cue-loop/app.js"></script>
+</body>
+</html>
