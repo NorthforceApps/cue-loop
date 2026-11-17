@@ -49,7 +49,7 @@
 </header>
 <main class="doc">
 <h1>Privacy Policy</h1>
-  <p class="eff">Effective date: September 9, 2026</p>
+  <p class="eff">Effective date: November 11, 2026</p>
   <p class="lede">CueLoop is an offline-first Android app that runs recurring reminder cues on your device and, when supported, mirrors cue notifications to a Wear OS watch. Its core features work without an account or sign-in. This policy explains what data is processed, how it is used, and your choices.</p>
 
   <h2>1. Summary</h2>
@@ -64,6 +64,8 @@
 
   <h2>2. Information We Process</h2>
   <p><strong>Reminder data stored on your device:</strong> cue names, optional messages, intervals and cadence, active-hours windows, cue mode (sound, vibration, screen flash), chosen sounds, theme/preference flags, and purchase entitlement state. This is stored locally so the app can run your configured cue loops and restore your preferences.</p>
+  <p><strong>Custom cue audio:</strong> you can import an audio file or record a 1–5 second cue using your phone’s microphone. Recording and preview are free; saving requires Pro access, including welcome access or Weekly Free Day. Microphone access is requested only when you tap Record, and capture stops when you leave the foreground. Audio and sound names stay in private local storage and are never uploaded to us or sent to analytics. Cancelled drafts are deleted; drafts interrupted by process termination remain in temporary cache until cleaned up. Custom audio is excluded from Android backup and device transfer. Saved sounds can be deleted individually from the sound picker.</p>
+  <p><strong>Habit reflection:</strong> if enabled for a cue, CueLoop stores its firing times, cue name/icon snapshots and your Done / Not done answers on this device. Saved history has no automatic expiry and is free for everyone. Answers can be edited and all history can be deleted from Reflection. Optional per-cue streaks are calculated locally. Reflection content is not sent to analytics, and its database is excluded from Android backup and device transfer.</p>
   <p><strong>Notifications &amp; alarms:</strong> CueLoop uses notifications, exact-alarm scheduling, and a foreground service so cues arrive on time. On some devices it offers guidance to enable notifications, exact alarms (Android 12+) or battery-optimization exclusions.</p>
   <p><strong>Wear OS mirroring:</strong> if you use Wear OS mirroring, reminder notifications are relayed through standard Android notification mechanisms to compatible wearable devices.</p>
 
@@ -75,7 +77,8 @@
     <li><strong>FOREGROUND_SERVICE_MEDIA_PLAYBACK</strong> — declares the media-playback foreground-service type used to play cue sounds reliably from the background.</li>
     <li><strong>VIBRATE</strong> — haptic (buzz) cues.</li>
     <li><strong>WAKE_LOCK</strong> — keep cue delivery reliable while active.</li>
-    <li><strong>READ access for custom audio</strong> — only if you choose your own sound file (Pro).</li>
+    <li><strong>RECORD_AUDIO</strong> — record a short cue after you tap Record and grant microphone access.</li>
+    <li><strong>READ access for custom audio</strong> — only for the sound file you choose through Android’s file picker (Pro access); no broad audio-library permission.</li>
   </ul>
 
   <h2>4. In-App Purchases</h2>

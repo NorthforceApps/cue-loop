@@ -49,7 +49,7 @@
 </header>
 <main class="doc">
 <h1>Política de Privacidade</h1>
-  <p class="eff">Data de vigência: 9 de setembro de 2026</p>
+  <p class="eff">Data de vigência: 11 de novembro de 2026</p>
   <p class="lede">CueLoop é um app Android offline primeiro que executa lembretes recorrentes no seu dispositivo e, quando compatível, espelha notificações de lembrete para um relógio Wear OS. Os recursos principais funcionam sem conta ou login. Esta política explica quais dados são processados, como são usados e quais escolhas você tem.</p>
 
   <h2>1. Resumo</h2>
@@ -64,6 +64,8 @@
 
   <h2>2. Informações que processamos</h2>
   <p><strong>Dados de lembrete armazenados no seu dispositivo:</strong> nomes e mensagens opcionais dos lembretes, intervalos e cadência, janelas de horas ativas, modo de lembrete (som, vibração, flash na tela), sons escolhidos, flags de tema/preferências e estado de direito de compra. Isso é armazenado localmente para o app executar seus ciclos de lembrete configurados e restaurar suas preferências.</p>
+  <p>Áudio personalizado: você pode importar um arquivo de áudio ou gravar um sinal de 1 a 5 segundos usando o microfone do celular. A gravação e a prévia são gratuitas; salvar exige acesso Pro, incluindo o acesso de boas-vindas ou Weekly Free Day. O acesso ao microfone só é solicitado quando você toca em Gravar. A gravação termina quando o app sai do primeiro plano. O áudio e os nomes dos sons ficam no armazenamento local privado e nunca são enviados aos nossos servidores nem aos serviços de análise. Rascunhos cancelados são excluídos; os interrompidos pelo encerramento do processo ficam no cache temporário até a limpeza. O áudio personalizado é excluído dos backups do Android e das transferências entre dispositivos. Os sons salvos podem ser excluídos individualmente no seletor de sons.</p>
+  <p>Reflexão sobre hábitos: se ativada para um sinal, o CueLoop armazena neste dispositivo seus horários de disparo, uma cópia do nome e do ícone e suas respostas Feito / Não feito. O histórico salvo não expira automaticamente e é gratuito para todos. Você pode editar respostas e excluir todo o histórico em Reflexão. As sequências opcionais de cada sinal são calculadas localmente. O conteúdo de Reflexão não é enviado aos serviços de análise, e seu banco de dados é excluído dos backups do Android e das transferências entre dispositivos.</p>
   <p><strong>Notificações e alarmes:</strong> CueLoop usa notificações, agendamento por alarme exato e um serviço em primeiro plano para que os lembretes cheguem no horário. Em alguns dispositivos, ele oferece orientação para ativar notificações, alarmes exatos (Android 12+) ou exclusões de otimização de bateria.</p>
   <p><strong>Espelhamento Wear OS:</strong> se você usa espelhamento Wear OS, as notificações de lembrete são retransmitidas por mecanismos padrão de notificação do Android para dispositivos vestíveis compatíveis.</p>
 
@@ -75,6 +77,7 @@
     <li><strong>FOREGROUND_SERVICE_MEDIA_PLAYBACK</strong> — declara o tipo de serviço em primeiro plano de reprodução de mídia usado para tocar os sons dos lembretes de forma confiável em segundo plano.</li>
     <li><strong>VIBRATE</strong> — lembretes hápticos (vibração).</li>
     <li><strong>WAKE_LOCK</strong> — manter a entrega de lembretes confiável enquanto ativa.</li>
+    <li><strong>RECORD_AUDIO</strong> — gravar um sinal curto após tocar em Gravar e permitir o acesso ao microfone.</li>
     <li><strong>Acesso de leitura para áudio personalizado</strong> — somente se você escolher seu próprio arquivo de som (Pro).</li>
   </ul>
 

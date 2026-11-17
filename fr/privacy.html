@@ -49,7 +49,7 @@
 </header>
 <main class="doc">
 <h1>Politique de confidentialité</h1>
-  <p class="eff">Date d’entrée en vigueur : 9 septembre 2026</p>
+  <p class="eff">Date d’entrée en vigueur : 11 novembre 2026</p>
   <p class="lede">CueLoop est une app Android conçue pour fonctionner hors ligne d’abord. Elle exécute des rappels récurrents sur votre appareil et, lorsque c’est pris en charge, reflète les notifications de rappel sur une montre Wear OS. Ses fonctions de base marchent sans compte ni connexion. Cette politique explique quelles données sont traitées, comment elles sont utilisées et quels choix vous avez.</p>
 
   <h2>1. Résumé</h2>
@@ -64,6 +64,8 @@
 
   <h2>2. Informations que nous traitons</h2>
   <p><strong>Données de rappel stockées sur votre appareil :</strong> noms et messages facultatifs des rappels, intervalles et cadence, plages d’heures actives, mode de rappel (son, vibration, flash d’écran), sons choisis, préférences de thème, indicateurs de préférence et état du droit d’achat. Ces données sont stockées localement pour que l’app puisse exécuter vos boucles configurées et restaurer vos préférences.</p>
+  <p>Audio personnalisé : vous pouvez importer un fichier audio ou enregistrer un signal de 1 à 5 secondes avec le microphone de votre téléphone. L’enregistrement et l’écoute sont gratuits ; la sauvegarde nécessite un accès Pro, y compris l’accès de bienvenue ou le Weekly Free Day. L’accès au microphone est demandé uniquement lorsque vous appuyez sur Enregistrer. L’enregistrement s’arrête lorsque l’app quitte le premier plan. Les fichiers audio et leurs noms restent dans le stockage local privé et ne sont jamais envoyés à nos serveurs ni aux services d’analyse. Les brouillons annulés sont supprimés ; ceux interrompus par l’arrêt du processus restent dans le cache temporaire jusqu’au nettoyage. Les fichiers audio personnalisés sont exclus des sauvegardes Android et des transferts entre appareils. Les sons sauvegardés peuvent être supprimés individuellement dans le sélecteur de sons.</p>
+  <p>Bilan des habitudes : si vous l’activez pour un signal, CueLoop conserve sur cet appareil ses heures de déclenchement, une copie de son nom et de son icône et vos réponses Fait / Pas fait. L’historique conservé n’expire pas automatiquement et est gratuit pour tous. Vous pouvez modifier vos réponses et supprimer tout l’historique depuis Bilan. Les séries facultatives par signal sont calculées localement. Le contenu du bilan n’est pas envoyé aux services d’analyse et sa base de données est exclue des sauvegardes Android et des transferts entre appareils.</p>
   <p><strong>Notifications et alarmes :</strong> CueLoop utilise les notifications, la planification d’alarmes exactes et un service de premier plan pour que les rappels arrivent à l’heure. Sur certains appareils, l’app propose des indications pour activer les notifications, les alarmes exactes (Android 12+) ou les exclusions d’optimisation batterie.</p>
   <p><strong>Miroir Wear OS :</strong> si vous utilisez le miroir Wear OS, les notifications de rappel sont relayées vers les appareils portables compatibles par les mécanismes de notification Android standards.</p>
 
@@ -75,6 +77,7 @@
     <li><strong>FOREGROUND_SERVICE_MEDIA_PLAYBACK</strong> — déclare le type de service de premier plan de lecture multimédia utilisé pour lire les sons de rappel de façon fiable en arrière-plan.</li>
     <li><strong>VIBRATE</strong> — rappels haptiques (vibration).</li>
     <li><strong>WAKE_LOCK</strong> — garder l’envoi des rappels fiable pendant l’activité.</li>
+    <li><strong>RECORD_AUDIO</strong> — enregistrer un court signal après avoir appuyé sur Enregistrer et autorisé l’accès au microphone.</li>
     <li><strong>Accès en lecture pour audio personnalisé</strong> — uniquement si vous choisissez votre propre fichier son (Pro).</li>
   </ul>
 
